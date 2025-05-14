@@ -122,6 +122,8 @@ const port = process.env.PORT || 9090;
 ┃     ┣ 🛤️ RAILWAY
 ┃     ┣ 💻 REPLIT
 ┃     ┗ ☁️ HEROKU
+┃🪀 | *PRÉFIX:*
+ *YOUR PREFIX:* = ${prefix}
 ┃
 ┃📦 | *BOT REPO:* 
 ┃     https://github.com/PROFESSEURMDX/HAIKO-MDX-V2
