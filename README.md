@@ -3,8 +3,7 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=600&size=25&duration=4000&pause=1000&color=459BF7FF&center=true&vCenter=true&width=500&lines=ULTIMATE+WHATSAPP+BOT;MULTI-DEVICE+SUPPORT;POWERED+BY+DEV PROFESSEUR;FAST++SECURE++RELIABLE" alt="Animated Typing SVG" />
-</p>
+  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=600&size=25&duration=4000&pause=1000&color=459BF7FF&center=true&vCenter=true&width=500&lines=ULTIMATE+WHATSAPP+BOT;MULTI-DEVICE+SUPPORT;POWERED+BY+DEV PROFESSEUR;FAST++SECURE++RELIABLE" 
 
 <div align="center">
   <a href="https://github.com/PROFESSEURMDX/followers"><img title="Followers" src="https://img.shields.io/github/followers/JawadYT36?color=EB5406&style=for-the-badge&logo=github&logoColor=white"></a>
@@ -238,7 +237,7 @@ jobs:
   <img src="https://github.com/PROFESSEURMDX/HAIKO-MDX-V2/blob/main/assets/futuretech.gif?raw=true" width="100%"/>
 </div>
 
-## 👑 KHAN STATUS
+## 👑 HAIKO-MDX STATUS
 
 ```diff
 + Project Status: Active
