@@ -1,49 +1,59 @@
-import config from '../config.cjs';
+const { cmd } = require('../command');
 
-const newsletter = async (m, Matrix) => {
-  const prefix = config.PREFIX;
-  const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
+cmd({
+    pattern: "newsletter",
+    desc: "Displays the @newsletter ID of the current channel",
+    category: "tools",
+    react: "📰",
+    filename: __filename
+},
+async (conn, mek, m) => {
+    const newsletterJid = m.chat;
 
-  if (cmd === "newsletter") {
-    const reactionEmojis = ['📰', '📣', '📨', '🔔', '🗞️', '📢'];
-    const textEmoji = reactionEmojis[Math.floor(Math.random() * reactionEmojis.length)];
-    await m.React(textEmoji);
+    // Journaliser l'utilisation de la commande
+    console.log(`[NEWSLETTER] Command used in: ${newsletterJid}`);
 
-    const isNewsletter = m.from.endsWith("@newsletter");
-    if (!isNewsletter) {
-      return await Matrix.sendMessage(m.from, {
-        text: "❗ This command must be used inside a WhatsApp channel (@newsletter)."
-      }, { quoted: m });
+    if (!newsletterJid.endsWith("@newsletter")) {
+        return conn.sendMessage(newsletterJid, {
+            text: "This command must be used inside a WhatsApp channel (@newsletter)."
+        }, { quoted: mek });
     }
 
+    // Optionnel : Vérifie si le JID semble valide (commence par "120")
+    if (!newsletterJid.startsWith("120")) {
+        return conn.sendMessage(newsletterJid, {
+            text: "This does not appear to be a valid WhatsApp channel ID."
+        }, { quoted: mek });
+    }
+
+    // Date et heure actuelle
     const now = new Date().toLocaleString();
-    const newsletterId = m.from;
 
-    // Envoie de l'ID du canal
-    await Matrix.sendMessage(m.from, {
-      text: `Channel ID:\n\n*${newsletterId}*\n\n🕒 *Executed on:* ${now}`
-    }, { quoted: m });
+    // Affiche l'ID du canal + date
+    await conn.sendMessage(newsletterJid, {
+        text: `Channel ID:\n\n*${newsletterJid}*\n\n🕒 *Executed on:* ${now}`
+    }, { quoted: mek });
 
-    // Message simulé transféré depuis un autre canal
+    // Simule un message transféré d’un autre canal
     const fakeNewsletterJid = '120363398101781980@newsletter';
     const fakeNewsletterName = '𝐇𝐀𝐈𝐊𝐎-𝐌𝐃𝐗-𝐕𝟐';
     const serverMessageId = 101;
+    const message = `Forwarded from another newsletter:\n\n*${newsletterJid}*`;
 
-    const forwardText = `Forwarded from another newsletter:\n\n*${newsletterId}*`;
-
-    await Matrix.sendMessage(m.from, {
-      text: forwardText,
-      contextInfo: {
-        forwardingScore: 999,
-        isForwarded: true,
-        forwardedNewsletterMessageInfo: {
-          newsletterJid: fakeNewsletterJid,
-          newsletterName: fakeNewsletterName,
-          serverMessageId: serverMessageId
-        }
-      }
-    }, { quoted: m });
-  }
-};
-
-export default newsletter;
+    await conn.sendMessage(
+        newsletterJid,
+        {
+            text: message,
+            contextInfo: {
+                forwardingScore: 999,
+                isForwarded: true,
+                forwardedNewsletterMessageInfo: {
+                    newsletterJid: fakeNewsletterJid,
+                    newsletterName: fakeNewsletterName,
+                    serverMessageId: serverMessageId
+                }
+            }
+        },
+        { quoted: mek }
+    );
+});
