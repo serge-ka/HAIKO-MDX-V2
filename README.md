@@ -1,9 +1,9 @@
-<p align="center">
-  <h1 align="center" style="font-family: 'Orbitron', sans-serif; text-shadow: 0 0 10px #00ffff, 0 0 20px #0088ff;">𝗛𝗔𝗜𝗞𝗢-𝗠𝗗𝗫-𝗩𝟮</h1>
-</p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=600&size=25&duration=4000&pause=1000&color=459BF7FF&center=true&vCenter=true&width=500&lines=ULTIMATE+WHATSAPP+BOT;MULTI-DEVICE+SUPPORT;POWERED+BY+DEV PROFESSEUR;FAST++SECURE++RELIABLE" 
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=100&pause=1000&color=1D51FFFF&center=true&vCenter=true&width=1000&height=200&lines=HAIKO-MDX;BY+DEV+PROFESSEUR" alt="Typing SVG" />
+  </a>
+</p>
 
 <div align="center">
   <a href="https://github.com/PROFESSEURMDX/followers"><img title="Followers" src="https://img.shields.io/github/followers/JawadYT36?color=EB5406&style=for-the-badge&logo=github&logoColor=white"></a>
