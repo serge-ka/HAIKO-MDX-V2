@@ -113,7 +113,27 @@ const port = process.env.PORT || 9090;
   console.log('Plugins installed successful ✅')
   console.log('Bot connected to whatsapp ✅')
   
-  let up = `*Hello there HAIKO-MDX-V2 User! \ud83d\udc4b\ud83c\udffb* \n\n> Simple , Straight Forward But Loaded With Features \ud83c\udf8a, Meet HAIKO-MDX-V2 WhatsApp Bot.\n\n *Thanks for using HAIKO-MDX-V2 \ud83d\udea9* \n\n> Join WhatsApp Channel :- ⤵️\n \nhttps://whatsapp.com/channel/0029Vb60jaI4o7qIfHw9mB1B\n\n- *YOUR PREFIX:* = ${prefix}\n\nDont forget to give star to repo ⬇️\n\nhttps://github.com/PROFESSEURMDX/HAIKO-MDX-V2\n\n> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴇᴠ ᴘʀᴏғᴇssᴇᴜʀ\ud83d\udda4`;
+  let up = `┏━━ ◈𝐇𝐀𝐈𝐊𝐎-𝐌𝐃𝐗-𝐕𝟐◈━━⬣
+┃🚀 | *DEPLOYMENT AVAILABLE ON:*
+┃     ┣ 📂 GITHUB
+┃     ┣ ⚙️ RENDER
+┃     ┣ ☁️ KOYEB
+┃     ┣ 🧩 PANEL
+┃     ┣ 🛤️ RAILWAY
+┃     ┣ 💻 REPLIT
+┃     ┗ ☁️ HEROKU
+┃
+┃📦 | *BOT REPO:* 
+┃     https://github.com/PROFESSEURMDX/HAIKO-MDX-V2
+┃
+┃📢 | *OFFICIAL CHANNEL:*
+┃     https://whatsapp.com/channel/0029Vb9qyTY47XeJ7i0wcQ40
+┃
+┃🔗 | *LINK GROUP :*
+┃
+https://chat.whatsapp.com/LXVl0EJ4WDkGmE7BbJlQy5
+┗━━━━━━━━━━━━━━━━━━━━━━⬣
+> *POWERED BY DEV PROFESSEUR 🪀*`;
     conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/cad2f0.jpg` }, caption: up })
   }
   })
