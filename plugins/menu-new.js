@@ -55,7 +55,7 @@ cmd({
                 return await conn.sendMessage(
                     from,
                     {
-                        image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/cad2f0.jpg' },
+                        image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/r30dc6.jpg' },
                         caption: menuCaption,
                         contextInfo: contextInfo
                     },
@@ -423,7 +423,7 @@ cmd({
                                 await conn.sendMessage(
                                     senderID,
                                     {
-                                        image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/cad2f0.jpg' },
+                                        image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/r30dc6.jpg' },
                                         caption: selectedMenu.content,
                                         contextInfo: contextInfo
                                     },
