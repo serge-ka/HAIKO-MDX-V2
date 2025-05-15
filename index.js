@@ -136,7 +136,7 @@ const port = process.env.PORT || 9090;
 https://chat.whatsapp.com/LXVl0EJ4WDkGmE7BbJlQy5
 ┗━━━━━━━━━━━━━━━━━━━━━━⬣
 > *POWERED BY DEV PROFESSEUR 🪀*`;
-    conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/dd797z.mp4` }, caption: up })
+    conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/r30dc6.jpg` }, caption: up })
   }
   })
   conn.ev.on('creds.update', saveCreds)
