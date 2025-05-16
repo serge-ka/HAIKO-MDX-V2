@@ -69,7 +69,7 @@
   <div style="height: 10px;"></div>
   
 > **PAIRiNG LINK (02)**
-  <a href='https://haiko-mdx-v2-session.onrender.com/pair' target="_blank">
+  <a href='https://inconnu-boy-tech-bot.onrender.com/pair' target="_blank">
     <img src='https://img.shields.io/badge/PAIR_CODE_2-FF00FF?style=for-the-badge&logo=matrix&logoColor=white&labelColor=000000'/>
   </a>
   
