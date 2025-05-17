@@ -68,7 +68,7 @@ const {
   //===================SESSION-AUTH============================
 if (!fs.existsSync(__dirname + '/sessions/creds.json')) {
 if(!config.SESSION_ID) return console.log('Please add your session to SESSION_ID env !!')
-const sessdata = config.SESSION_ID.replace("INCONNU~XD~", '');
+const sessdata = config.SESSION_ID.replace("HAIKO~MDX~", '');
 const filer = File.fromURL(`https://mega.nz/file/${sessdata}`)
 filer.download((err, data) => {
 if(err) throw err
@@ -131,9 +131,6 @@ const port = process.env.PORT || 9090;
 ┃📢 | *OFFICIAL CHANNEL:*
 ┃     https://whatsapp.com/channel/0029Vb9qyTY47XeJ7i0wcQ40
 ┃
-┃🔗 | *LINK GROUP :*
-┃
-https://chat.whatsapp.com/LXVl0EJ4WDkGmE7BbJlQy5
 ┗━━━━━━━━━━━━━━━━━━━━━━⬣
 > *ᴘᴏᴡᴇʀᴇᴅ ᴠʏ ᴅᴇᴠ ᴘʀᴏғᴇssᴇᴜʀ🪀*`;
     conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/r30dc6.jpg` }, caption: up })
