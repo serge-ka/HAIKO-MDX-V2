@@ -29,7 +29,7 @@ PREFIX: process.env.PREFIX || "±",
 // add your prifix for bot   
 BOT_NAME: process.env.BOT_NAME || "HAIKO-MDX-V2",
 // add bot namw here for menu
-STICKER_NAME: process.env.STICKER_NAME || "༺𒋲✟⃟͠♻️𝐃𝐄𝐕 𝐏𝐑𝚯𝐅𝐄𝐒𝐒𝐄𝐔𝐑👻❂𒋲",
+STICKER_NAME: process.env.STICKER_NAME || "༺𒋲⃟🀧𝐓𝐇𝐄 𝐏𝐑𝐎𝐅𝐄𝐒𝐒𝐄𝐔𝐑🀈⃟𒋲🩸᪳",
 // type sticker pack name 
 CUSTOM_REACT: process.env.CUSTOM_REACT || "false",
 // make this true for custum emoji react    
@@ -53,7 +53,7 @@ AUTO_REACT: process.env.AUTO_REACT || "false",
 // make this true or false for auto react on all msgs
 ANTI_BAD: process.env.ANTI_BAD || "false",
 // false or true for anti bad words  
-MODE: process.env.MODE || "public",
+MODE: process.env.MODE || "private",
 // make bot public-private-inbox-group 
 ANTI_LINK_KICK: process.env.ANTI_LINK_KICK || "false",
 // make anti link true,false for groups 
