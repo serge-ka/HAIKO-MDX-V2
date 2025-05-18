@@ -13,7 +13,7 @@ async (conn, mek, m, { from, args, q, reply, react }) => {
     try {
         if (!q) return reply("Please enter a message to send to the chatbot.\nExample: `.chatbot Hello`");
 
-        const apiUrl = `https://api.example.com/chatbot?message=${encodeURIComponent(q)}`;
+        const apiUrl = `https://lance-frank-asta.onrender.com/api/chatbot?message=${encodeURIComponent(q)}`;
         const { data } = await axios.get(apiUrl);
 
         if (!data || !data.response) {
