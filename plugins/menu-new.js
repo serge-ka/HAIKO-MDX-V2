@@ -7,7 +7,7 @@ cmd({
     pattern: "menu",
     desc: "Show interactive menu system",
     category: "menu",
-    react: "🦞",
+    react: "📑",
     filename: __filename
 }, async (conn, mek, m, { from, reply }) => {
     try {
@@ -44,7 +44,7 @@ cmd({
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
                 newsletterJid: '120363398101781980@newsletter',
-                newsletterName: "𝐇𝐀𝐈𝐊𝐎-𝐌𝐃𝐗-𝐕𝟐",
+                newsletterName: "𝐇𝐀𝐈𝐊𝐎-𝐌𝐃𝐗-𝐕𝟐🪀",
                 serverMessageId: 143
             }
         };
@@ -55,7 +55,7 @@ cmd({
                 return await conn.sendMessage(
                     from,
                     {
-                        image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/r30dc6.jpg' },
+                        image: { url: config.MENU_IMAGE_URL || 'https://i.ibb.co/JjRxQqvN/9257.jpg' },
                         caption: menuCaption,
                         contextInfo: contextInfo
                     },
@@ -423,7 +423,7 @@ cmd({
                                 await conn.sendMessage(
                                     senderID,
                                     {
-                                        image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/r30dc6.jpg' },
+                                        image: { url: config.MENU_IMAGE_URL || 'https://i.ibb.co/JjRxQqvN/9257.jpg' },
                                         caption: selectedMenu.content,
                                         contextInfo: contextInfo
                                     },
