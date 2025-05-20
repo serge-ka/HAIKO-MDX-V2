@@ -8,7 +8,7 @@ cmd({
     pattern: "menu3",
     desc: "menu the bot",
     category: "menu2",
-    react: "🦞",
+    react: "📑",
     filename: __filename
 },
 async (conn, mek, m, { from, sender, pushname, reply }) => {
@@ -90,7 +90,7 @@ cmd({
     alias: ["logomenu"],
     desc: "menu the bot",
     category: "menu",
-    react: "🦞",
+    react: "📑",
     filename: __filename
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
@@ -160,7 +160,7 @@ cmd({
     pattern: "reactions",
     desc: "Shows the reaction commands",
     category: "menu",
-    react: "🦞",
+    react: "📑",
     filename: __filename
 }, 
 async (conn, mek, m, { from, quoted, reply }) => {
@@ -228,7 +228,7 @@ cmd({
     pattern: "dlmenu",
     desc: "menu the bot",
     category: "menu",
-    react: "🦞",
+    react: "📑",
     filename: __filename
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
@@ -311,7 +311,7 @@ cmd({
     pattern: "groupmenu",
     desc: "menu the bot",
     category: "menu",
-    react: "🦞",
+    react: "📑",
     filename: __filename
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
@@ -389,7 +389,7 @@ cmd({
     pattern: "funmenu",
     desc: "menu the bot",
     category: "menu",
-    react: "🦞",
+    react: "📑",
     filename: __filename
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
@@ -456,7 +456,7 @@ cmd({
     pattern: "othermenu",
     desc: "menu the bot",
     category: "menu",
-    react: "🦞",
+    react: "📑",
     filename: __filename
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
@@ -527,7 +527,7 @@ cmd({
     pattern: "mainmenu",
     desc: "menu the bot",
     category: "menu",
-    react: "🦞",
+    react: "📑",
     filename: __filename
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
@@ -638,7 +638,7 @@ cmd({
     pattern: "convertmenu",
     desc: "menu the bot",
     category: "menu",
-    react: "🦞",
+    react: "📑",
     filename: __filename
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
@@ -700,7 +700,7 @@ cmd({
     pattern: "animemenu",
     desc: "menu the bot",
     category: "menu",
-    react: "🦞",
+    react: "📑",
     filename: __filename
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
@@ -769,7 +769,7 @@ cmd({
     pattern: "aimenu",
     desc: "menu the bot",
     category: "menu",
-    react: "🦞",
+    react: "📑",
     filename: __filename
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
