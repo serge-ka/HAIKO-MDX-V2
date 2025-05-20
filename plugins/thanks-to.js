@@ -14,7 +14,7 @@ async (conn, mek, m, { from }) => {
         const message = `
 ╭─❏ *THANKS TO :*
 │
-│👨‍💻 DEV:© *PROFESSEUR♻️*
+│👨‍💻 DEV:*SERGIO MARQUINA*
 │🪀 NUM:+529633982655
 │───────────────────────
 │🛠️ *BOT NAME:* © *HAIKO-MDX-V2*
@@ -25,7 +25,7 @@ async (conn, mek, m, { from }) => {
 `;
 
         await conn.sendMessage(from, {
-            image: { url: 'https://files.catbox.moe/r30dc6.jpg' },
+            image: { url: 'https://i.ibb.co/Kp634Kg9/3895.jpg' },
             caption: message,
             contextInfo: {
                 mentionedJid: [m.sender],
@@ -33,7 +33,7 @@ async (conn, mek, m, { from }) => {
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: '120363398101781980@newsletter', // remplace avec ton vrai newsletterJid si besoin
-                    newsletterName: '𝐇𝐀𝐈𝐊𝐎-𝐌𝐃𝐗-𝐕𝟐',
+                    newsletterName: '⚽𝐇𝐀𝐈𝐊𝐎-𝐌𝐃𝐗-𝐕𝟐🏀',
                     serverMessageId: 143
                 }
             }
