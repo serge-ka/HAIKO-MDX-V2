@@ -73,7 +73,7 @@ cmd({
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/cad2f0.jpg` },
+                image: { url: `https://i.ibb.co/JjRxQqvN/9257.jpg` },
                 caption: menuText,
                 contextInfo: {
                     mentionedJid: [m.sender],
