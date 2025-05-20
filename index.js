@@ -113,27 +113,14 @@ const port = process.env.PORT || 9090;
   console.log('Plugins installed successful ✅')
   console.log('Bot connected to whatsapp ✅')
   
-  let up = `┏━━ ◈𝐇𝐀𝐈𝐊𝐎-𝐌𝐃𝐗-𝐕𝟐◈━━⬣
-┃🚀 | *DEPLOYMENT AVAILABLE ON:*
-┃     ┣ 📂 GITHUB
-┃     ┣ ⚙️ RENDER
-┃     ┣ ☁️ KOYEB
-┃     ┣ 🧩 PANEL
-┃     ┣ 🛤️ RAILWAY
-┃     ┣ 💻 REPLIT
-┃     ┗ ☁️ HEROKU
-┃🪀 | *PRÉFIX:*
- *YOUR PREFIX:* = ${prefix}
-┃
-┃📦 | *BOT REPO:* 
-┃     https://github.com/PROFESSEURMDX/HAIKO-MDX-V2
-┃
-┃📢 | *OFFICIAL CHANNEL:*
-┃     https://whatsapp.com/channel/0029Vb9qyTY47XeJ7i0wcQ40
-┃
-┗━━━━━━━━━━━━━━━━━━━━━━⬣
-> *ᴘᴏᴡᴇʀᴇᴅ ᴠʏ ᴅᴇᴠ ᴘʀᴏғᴇssᴇᴜʀ🪀*`;
-    conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/r30dc6.jpg` }, caption: up })
+  let up = `╔═◈『𝐇𝐀𝐈𝐊𝐎-𝐌𝐃𝐗-𝐕𝟐』◈═╗
+║ 𖣐 Prefix:  ${prefix}
+║ 𖣐 Owner: 𝐃𝐄𝐕 𝐏𝐑𝐎𝐅𝐄𝐒𝐒𝐄𝐔𝐑
+║ 𖣐 Commandes: ${commandes}
+║ 𖣐 Uptime: .. . 
+║ 𖣐 Dev:𝐒𝐄𝐑𝐆𝐈𝐎 𝐌𝐀𝐑𝐐𝐔𝐈𝐍𝐀
+╚═━━━━━━◇✰◇━━━━━━═╝`;
+    conn.sendMessage(conn.user.id, { image: { url: `https://i.ibb.co/JjRxQqvN/9257.jpg` }, caption: up })
   }
   })
   conn.ev.on('creds.update', saveCreds)
