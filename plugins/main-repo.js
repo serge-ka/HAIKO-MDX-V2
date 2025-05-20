@@ -172,7 +172,7 @@ ${repoData.description || 'No description provided'}
 
         // Send image with repo info
         await conn.sendMessage(from, {
-            image: { url: `https://files.catbox.moe/r30dc6.jpg` },
+            image: { url: `https://i.ibb.co/Kp634Kg9/3895.jpg` },
             caption: selectedStyle,
             contextInfo: { 
                 mentionedJid: [m.sender],
@@ -180,7 +180,7 @@ ${repoData.description || 'No description provided'}
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: '120363398101781980@newsletter',
-                    newsletterName: config.OWNER_NAME || '𝐇𝐀𝐈𝐊𝐎-𝐌𝐃𝐗-𝐕𝟐',
+                    newsletterName: config.OWNER_NAME || '𝐇𝐀𝐈𝐊𝐎-𝐌𝐃𝐗-𝐕𝟐🪀',
                     serverMessageId: 143
                 }
             }
