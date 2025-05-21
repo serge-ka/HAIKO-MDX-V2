@@ -23,13 +23,13 @@ ANTI_LINK: process.env.ANTI_LINK || "true",
 // make anti link true,false for groups 
 MENTION_REPLY: process.env.MENTION_REPLY || "false",
 // make true if want auto voice reply if someone menetion you 
-MENU_IMAGE_URL: process.env.MENU_IMAGE_URL || "https://i.ibb.co/Kp634Kg9/3895.jpg",
+MENU_IMAGE_URL: process.env.MENU_IMAGE_URL || "https://i.ibb.co/JjRxQqvN/9257.jpg",
 // add custom menu and mention reply image url
 PREFIX: process.env.PREFIX || "±",
 // add your prifix for bot   
 BOT_NAME: process.env.BOT_NAME || "HAIKO-MDX-V2",
 // add bot namw here for menu
-STICKER_NAME: process.env.STICKER_NAME || "༺𒋲⃟🀧𝐓𝐇𝐄 𝐏𝐑𝐎𝐅𝐄𝐒𝐒𝐄𝐔𝐑🀈⃟𒋲🩸᪳",
+STICKER_NAME: process.env.STICKER_NAME || "༺𒋲⃟🀧𝐒𝐄𝐑𝐆𝐈𝐎 𝐌𝐀𝐑𝐐𝐔𝐈𝐍𝐀🀈⃟𒋲🩸᪳",
 // type sticker pack name 
 CUSTOM_REACT: process.env.CUSTOM_REACT || "false",
 // make this true for custum emoji react    
@@ -39,11 +39,11 @@ DELETE_LINKS: process.env.DELETE_LINKS || "false",
 // automatic delete links witho remove member 
 OWNER_NUMBER: process.env.OWNER_NUMBER || "529633982655",
 // add your bot owner number
-OWNER_NAME: process.env.OWNER_NAME || "ᴘʀᴏғᴇssᴇᴜʀ ᴛᴇᴄʜ",
+OWNER_NAME: process.env.OWNER_NAME || "༺𒋲⃟🀧𝐒𝐄𝐑𝐆𝐈𝐎 𝐌𝐀𝐑𝐐𝐔𝐈𝐍𝐀🀈⃟𒋲🩸᪳",
 // add bot owner name
 DESCRIPTION: process.env.DESCRIPTION || "*© ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʜᴀɪᴋᴏ ᴍᴅx*",
 // add bot owner name    
-ALIVE_IMG: process.env.ALIVE_IMG || "https://i.ibb.co/JjRxQqvN/9257.jpg",
+ALIVE_IMG: process.env.ALIVE_IMG || "https://i.ibb.co/Kp634Kg9/3895.jpg",
 // add img for alive msg
 LIVE_MSG: process.env.LIVE_MSG || "> Zinda Hun Yar *HAIKO-MDX-V2*👻",
 // add alive msg here 
