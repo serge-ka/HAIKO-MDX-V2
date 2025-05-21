@@ -5,7 +5,7 @@ let tttGames = {};
 const ttt = async (m, sock) => {
   const from = m.from;
   const sender = m.sender;
-  const prefix = config.PREFIX || ".";
+  const prefix = config.PREFIX || "±";
 
   const cmd = m.body.startsWith(prefix)
     ? m.body.slice(prefix.length).split(' ')[0].toLowerCase()
