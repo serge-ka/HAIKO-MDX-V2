@@ -6,7 +6,7 @@ cmd({
     alias: ["thanksto", "dev"],
     desc: "thanks to dev for helping",
     category: "main",
-    react: "🧸",
+    react: "💬",
     filename: __filename
 },
 async (conn, mek, m, { from }) => {
@@ -14,10 +14,10 @@ async (conn, mek, m, { from }) => {
         const message = `
 ╭─❏ *THANKS TO :*
 │
-│👨‍💻 DEV:*SERGIO MARQUINA*
+│👨‍💻 DEV:𝐒𝐄𝐑𝐆𝐈𝐎 𝐌𝐀𝐑𝐐𝐔𝐈𝐍𝐀
 │🪀 NUM:+529633982655
 │───────────────────────
-│🛠️ *BOT NAME:* © *HAIKO-MDX-V2*
+│🛠️ *BOT NAME:* ©𝐇𝐀𝐈𝐊𝐎-𝐌𝐃𝐗-𝐕𝟐
 │───────────────────────
 │🙋‍♂️ HELLO @${m.sender.split("@")[0]}
 │
