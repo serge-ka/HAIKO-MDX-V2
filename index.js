@@ -114,12 +114,14 @@ const port = process.env.PORT || 9090;
   console.log('Bot connected to whatsapp ✅')
   
   let up = `╔═◈『𝐇𝐀𝐈𝐊𝐎-𝐌𝐃𝐗-𝐕𝟐』◈═╗
-║ 𖣐 Prefix:  ${prefix}
-║ 𖣐 Owner: 𝐃𝐄𝐕 𝐏𝐑𝐎𝐅𝐄𝐒𝐒𝐄𝐔𝐑
-║ 𖣐 Commandes: ${commandes}
-║ 𖣐 Uptime: .. . 
-║ 𖣐 Dev:𝐒𝐄𝐑𝐆𝐈𝐎 𝐌𝐀𝐑𝐐𝐔𝐈𝐍𝐀
-╚═━━━━━━◇✰◇━━━━━━═╝`;
+║🪀 | *PRÉFIX:*
+ *YOUR PREFIX:* = ±
+║
+║📦 ┃ *BOT REPO:* 
+║     https://github.com/PROFESSEURMDX/HAIKO-MDX-V2
+║
+╚══════════════════╝
+> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴇᴠ ᴘʀᴏғᴇssᴇᴜʀ*`;
     conn.sendMessage(conn.user.id, { image: { url: `https://i.ibb.co/JjRxQqvN/9257.jpg` }, caption: up })
   }
   })
