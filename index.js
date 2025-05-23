@@ -115,7 +115,10 @@ const port = process.env.PORT || 9090;
   
   let up = `╔═◈『𝐇𝐀𝐈𝐊𝐎-𝐌𝐃𝐗-𝐕𝟐』◈═╗
 ║🪀 | *PRÉFIX:*
- *YOUR PREFIX:* = ±
+*YOUR PREFIX:* = ${prefix}
+║
+║♻️| *MODE:*
+*[${config.MODE}]*
 ║
 ║📦 ┃ *BOT REPO:* 
 ║     https://github.com/PROFESSEURMDX/HAIKO-MDX-V2
