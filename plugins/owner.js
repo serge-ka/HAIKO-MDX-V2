@@ -29,11 +29,11 @@ async (conn, mek, m, { from }) => {
 
         // Send the owner contact message with image and audio
         await conn.sendMessage(from, {
-            image: { url: 'https://i.ibb.co/JjRxQqvN/9257.jpg' }, // Image URL from your request
+            image: { url: 'https://files.catbox.moe/y1oyum.jpg' }, // Image URL from your request
             caption: `╭━━〔 *𝐇𝐀𝐈𝐊𝐎-𝐌𝐃𝐗-𝐕𝟐* 〕━━┈⊷
 ┃◈╭─────────────·๏
 ┃◈┃• *Here is the owner details*
-┃◈┃• *Name* - ༺𒋲⃟🀧𝐒𝐄𝐑𝐆𝐈𝐎 𝐌𝐀𝐑𝐐𝐔𝐈𝐍𝐀🀈⃟𒋲🩸᪳
+┃◈┃• *Name* 𝐒𝐄𝐑𝐆𝐈𝐎 𝐌𝐀𝐑𝐐𝐔𝐈𝐍𝐀
 ┃◈┃• *Number* ${ownerNumber}
 ┃◈┃• *Version*: 2.0.0 Beta
 ┃◈└───────────┈⊷
