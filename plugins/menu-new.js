@@ -4,7 +4,7 @@ const { runtime } = require('../lib/functions');
 const axios = require('axios');
 
 cmd({
-    pattern: "menu",
+    pattern: "prof",
     desc: "Show interactive menu system",
     category: "menu",
     react: "📑",
@@ -423,7 +423,7 @@ cmd({
                                 await conn.sendMessage(
                                     senderID,
                                     {
-                                        image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/dld53o.jpg' },
+                                        image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/n8o5y2.jpg' },
                                         caption: selectedMenu.content,
                                         contextInfo: contextInfo
                                     },
