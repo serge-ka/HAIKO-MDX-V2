@@ -114,10 +114,10 @@ const port = process.env.PORT || 9090;
   console.log('Bot connected to whatsapp ✅')
   
   let up = `╔═◈『𝐇𝐀𝐈𝐊𝐎-𝐌𝐃𝐗-𝐕𝟐』◈═╗
-║🪀 | *PRÉFIX:*
+║🪀 ┃ *PRÉFIX:*
 *YOUR PREFIX:* = ${prefix}
 ║
-║♻️| *MODE:* *[${config.MODE}]*
+║♻️ ┃ *MODE:* *[${config.MODE}]*
 ║
 ║📦 ┃ *BOT REPO:* 
 ║     https://github.com/PROFESSEURMDX/HAIKO-MDX-V2
