@@ -55,7 +55,7 @@ cmd({
                 return await conn.sendMessage(
                     from,
                     {
-                        image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/dld53o.jpg' },
+                        image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/7y24v8.jpg' },
                         caption: menuCaption,
                         contextInfo: contextInfo
                     },
@@ -76,7 +76,7 @@ cmd({
             try {
                 await new Promise(resolve => setTimeout(resolve, 1000)); // Small delay after image
                 await conn.sendMessage(from, {
-                    audio: { url: 'https://files.catbox.moe/4lriuj.mp3' },
+                    audio: { url: 'https://files.catbox.moe/gm2hfz.mp3' },
                     mimetype: 'audio/mp4',
                     ptt: true,
                 }, { quoted: mek });
@@ -423,7 +423,7 @@ cmd({
                                 await conn.sendMessage(
                                     senderID,
                                     {
-                                        image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/n8o5y2.jpg' },
+                                        image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/7y24v8.jpg' },
                                         caption: selectedMenu.content,
                                         contextInfo: contextInfo
                                     },
