@@ -27,8 +27,8 @@ cmd({
 │ •   Bot Name: *HAIKO-MDX-V2*
 │ •   Owner: ${config.OWNER_NAME}
 │ •   Prefix: [${config.PREFIX}]
-│ •   Platform: Heroku
-│ •   Version: 1.0.0
+│ •   Platform: GITHUB 
+│ •   Version: 2.0.0
 │ •   Runtime: ${runtime(process.uptime())}
 │
 │    *COMMAND STATS*
