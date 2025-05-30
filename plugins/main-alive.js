@@ -14,7 +14,7 @@ cmd({
 async (conn, mek, m, { from, sender, reply }) => {
     try {
         const status = `
-╭───〔 *🤖 STATUS* 〕───◉
+╭───⪨🤖𝐒𝐓𝐀𝐓𝐔𝐒⪩───◉
 │✨ *Bot is Active & Online!*
 │
 │🧠 *Owner:* ${config.OWNER_NAME}
