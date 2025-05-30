@@ -21,7 +21,7 @@ async (conn, mek, m, { from, reply }) => {
         const repoData = await response.json();
 
         // Format 1: Classic Box
-        const style1 = `╭───『 ${config.BOT_NAME} REPO 』───⳹
+        const style1 = `╭───『 ${config.BOT_NAME} 𝐑𝐄𝐏𝐎 』───⳹
 │
 │ 📦 *Repository*: ${repoData.name}
 │ 👑 *Owner*: ${repoData.owner.login}
@@ -36,7 +36,7 @@ async (conn, mek, m, { from, reply }) => {
 > ${config.DESCRIPTION}`;
 
         // Format 2: Minimalist
-        const style2 = `•——[ GITHUB INFO ]——•
+        const style2 = `•——[ 𝐆𝐈𝐓𝐇𝐔𝐁 𝐈𝐍𝐅𝐎 ]——•
   │
   ├─ 🏷️ ${repoData.name}
   ├─ 👤 ${repoData.owner.login}
@@ -47,7 +47,7 @@ async (conn, mek, m, { from, reply }) => {
   > ${config.DESCRIPTION}`;
 
         // Format 3: Fancy Borders
-        const style3 = `▄▀▄▀▄ REPOSITORY INFO ▄▀▄▀▄
+        const style3 = `▄▀▄▀▄ 𝐑𝐄𝐏𝐎𝐒𝐈𝐓𝐎𝐑𝐘 𝐈𝐍𝐅𝐎 ▄▀▄▀▄
 
   ♢ *Project*: ${repoData.name}
   ♢ *Author*: ${repoData.owner.login}
@@ -61,7 +61,7 @@ async (conn, mek, m, { from, reply }) => {
 
         // Format 4: Code Style
         const style4 = `┌──────────────────────┐
-│  ♻️ ${config.BOT_NAME} REPO  ♻️  │
+│  ♻️ ${config.BOT_NAME} 𝐑𝐄𝐏𝐎  ♻️  │
 ├──────────────────────┤
 │ • Name: ${repoData.name}
 │ • Owner: ${repoData.owner.login}
@@ -73,7 +73,7 @@ async (conn, mek, m, { from, reply }) => {
 > ${config.DESCRIPTION}`;
 
         // Format 5: Modern Blocks
-        const style5 = `▰▰▰▰▰ REPO INFO ▰▰▰▰▰
+        const style5 = `▰▰▰▰▰ 𝐑𝐄𝐏𝐎 𝐈𝐍𝐅𝐎 ▰▰▰▰▰
 
   🏷️  *${repoData.name}*
   👨‍💻  ${repoData.owner.login}
@@ -87,7 +87,7 @@ async (conn, mek, m, { from, reply }) => {
 
         // Format 6: Retro Terminal
         const style6 = `╔══════════════════════╗
-║   ${config.BOT_NAME} REPO    ║
+║   ${config.BOT_NAME} 𝐑𝐄𝐏𝐎    ║
 ╠══════════════════════╣
 ║ > NAME: ${repoData.name}
 ║ > OWNER: ${repoData.owner.login}
@@ -100,7 +100,7 @@ async (conn, mek, m, { from, reply }) => {
 
         // Format 7: Elegant
         const style7 = `┌───────────────┐
-│  📨  REPO  │
+│  📨  𝐑𝐄𝐏𝐎  │
 └───────────────┘
 │
 │ *Project*: ${repoData.name}
@@ -112,7 +112,7 @@ async (conn, mek, m, { from, reply }) => {
 │ 🔗 ${repoData.html_url}
 │
 ┌───────────────┐
-│  📝  DESC  │
+│  📝  𝐃𝐄𝐒𝐂  │
 └───────────────┘
 ${repoData.description || 'No description'}
 
@@ -135,7 +135,7 @@ ${repoData.description || 'No description available'}
 
         // Format 9: Fancy List
         const style9 = `╔♫═🎧═♫══════════╗
-   ${config.BOT_NAME} REPO
+   ${config.BOT_NAME} 𝐑𝐄𝐏𝐎
 ╚♫═🎧═♫══════════╝
 
 •・゜゜・* ✧  *・゜゜・•
@@ -153,7 +153,7 @@ ${repoData.description || 'No description'}
 
         // Format 10: Professional
         const style10 = `┏━━━━━━━━━━━━━━━━━━┓
-┃  REPOSITORY REPORT  ┃
+┃  𝐑𝐄𝐏𝐎𝐒𝐈𝐓𝐎𝐑𝐘 𝐑𝐄𝐏𝐎𝐑𝐓  ┃
 ┗━━━━━━━━━━━━━━━━━━┛
 
 ◈ Project: ${repoData.name}
@@ -188,7 +188,7 @@ ${repoData.description || 'No description provided'}
 
         // Send audio
         await conn.sendMessage(from, {
-            audio: { url: 'https://files.catbox.moe/gm2hfz.mp3' },
+            audio: { url: 'https://files.catbox.moe/gidmqw.mp3' },
             mimetype: 'audio/mp4',
             ptt: true,
             contextInfo: { 
