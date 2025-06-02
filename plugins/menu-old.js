@@ -8,7 +8,7 @@ cmd({
     pattern: "menu3",
     desc: "menu the bot",
     category: "menu2",
-    react: "📑",
+    react: "🛸",
     filename: __filename
 },
 async (conn, mek, m, { from, sender, pushname, reply }) => {
