@@ -4,10 +4,10 @@ const { runtime } = require('../lib/functions');
 const axios = require('axios');
 
 cmd({
-    pattern: "menu",
+    pattern: "menu2",
     desc: "Show interactive menu system",
     category: "menu",
-    react: "📑",
+    react: "🛸",
     filename: __filename
 }, async (conn, mek, m, { from, reply }) => {
     try {
