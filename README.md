@@ -20,11 +20,11 @@
   <img src="https://komarev.com/ghpvc/?username=HAIKO-MDX-VII&label=VISITORS&style=flat-square&color=0002FF" />
 </p>
 
-> **Current Bot Version `2.0.0`**  
+> **CURRENT BOT VERSION ➺`2.0.0`**  
 
 ---
 
-*Dont forget to fork & star repo*
+*DON'T FORGET TO FORK & STAR🌟 REPO*
 
 ---
 
@@ -43,9 +43,9 @@
   <img src="https://github.com/Professeur-xd/HAIKO-MDX-VII/blob/main/assets/deployheader.gif?raw=true" width="80%"/>
 </div>
 
-## 🛰️ Deployment Steps
+## 🛰️ DEPLOYMENT STEPS 
 
-<div style="background: #000000; border: 1px solid #00ffff; border-radius: 15px; padding: 20px; box-shadow: 0 0 15px #00ffff; margin-bottom: 30px;">
+<div style="background; border: 1px solid #00ffff; border-radius: 15px; padding: 20px; box-shadow: 0 0 15px #00ffff; margin-bottom: 30px;">
     
 <div style="background: #111111; padding: 15px; border-radius: 10px; border-left: 3px solid #ff00ff;">
   <p style="color: #00ffff;">First star & Fork repo using button Below !</p>
@@ -61,14 +61,14 @@
 <div style="background: #111111; padding: 15px; border-radius: 10px; border-left: 3px solid #00ffff;">
   
 --- 
-> **PAIRING LINK (01)**
+> **PAIRING LINK➻ 01**
   <a href='https://haiko-mdx-v2-session.onrender.com' target="_blank">
     <img src='https://img.shields.io/badge/PAIR_CODE_1-00FFFF?style=for-the-badge&logo=matrix&logoColor=white&labelColor=000000'/>
   </a></br>
   
   <div style="height: 10px;"></div>
   
-> **PAIRiNG LINK (02)**
+> **PAIRING LINK➻ 02**
   <a href='https://haiko-mdx-v2-session.onrender.com/pair' target="_blank">
     <img src='https://img.shields.io/badge/PAIR_CODE_2-FF00FF?style=for-the-badge&logo=matrix&logoColor=white&labelColor=000000'/>
   </a>
@@ -88,7 +88,7 @@
 
 ---
 
-### ⚙️ CONFIGURATION `.env` File
+### ⚙️ CONFIGURATION➼ `.env` File
 
 ```env
 SESSION_ID="HAIKO~MDX~"
@@ -110,7 +110,7 @@ PREFIX="."
 ```
 ---
 
-### ⚙️ CONFIGURATION `node.js` File
+### ⚙️ CONFIGURATION➽ `node.js` File
 
 ```
 name: Node.js CI
