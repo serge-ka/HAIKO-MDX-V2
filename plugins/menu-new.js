@@ -18,7 +18,7 @@ cmd({
 ├❁│ Type : *NodeJs*
 ├❁│ Platform : *GITHUB*
 ├❁│ Mode : *[${config.MODE}]*
-├❁│ Prefix : *[${config.PREFIX}]*
+├❁│ Prefix : *➥${config.PREFIX}*
 ├❁│ Version : *2.0.0 Bᴇᴛᴀ*
 ├❁╰─────────────
 ╰━━━━━━━━━━━━━┈⊷
