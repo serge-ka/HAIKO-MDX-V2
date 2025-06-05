@@ -18,7 +18,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         let dec = `╭━⪨ *𝐇𝐀𝐈𝐊𝐎-𝐌𝐃𝐗-𝐕𝟐* ⪩━┈⊷
 ├❁╭───────────────·๏
 ├❁┃•  Owner : *${config.OWNER_NAME}*
-├❁┃•  Prefix : *[${config.PREFIX}]*
+├❁┃•  Prefix : *➥${config.PREFIX}*
 ├❁┃•  Platform : *GITHUB*
 ├❁┃•  Version : *2.0.0*
 ├❁┃•  Runtime : *${runtime(process.uptime())}*
