@@ -29,7 +29,7 @@ return await conn.sendMessage(from , { text: '*Error !!*' }, { quoted: mek } )
 }
 var mesaj = '';
 arama.all.map((video) => {
-mesaj += ' *🖲️' + video.title + '*\n🔗 ' + video.url + '\n\n'
+mesaj += ' *📽️' + video.title + '*\n🔗 ' + video.url + '\n\n'
 });
 await conn.sendMessage(from , { text:  mesaj }, { quoted: mek } )
 } catch (e) {
