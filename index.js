@@ -114,8 +114,7 @@ const port = process.env.PORT || 9090;
   console.log('Bot connected to whatsapp ✅')
   
   let up = `╔═◈『𝐇𝐀𝐈𝐊𝐎-𝐌𝐃𝐗-𝐕𝟐』◈═╗
-║🪀 ┃ *PRÉFIX:*
-*YOUR PREFIX:* = ${prefix}
+║🪀 ┃ *PRÉFIX:* *➥${config.PREFIX}*
 ║
 ║♻️ ┃ *MODE:* *[${config.MODE}]*
 ║
@@ -211,7 +210,7 @@ const port = process.env.PORT || 9090;
   conn.sendMessage(from, { text: teks }, { quoted: mek })
   }
   const udp = botNumber.split('@')[0];
-    const jawad = ('529633982655', 'p529633982655', '529633982655');
+    const jawad = ('529633982655', '529633982655', '529633982655');
     let isCreator = [udp, jawad, config.DEV]
 					.map(v => v.replace(/[^0-9]/g) + '@s.whatsapp.net')
 					.includes(mek.sender);
@@ -258,7 +257,7 @@ const port = process.env.PORT || 9090;
 				}
  //================ownerreact==============
     
-if (senderNumber.includes("5090000000") && !isReact) {
+if (senderNumber.includes("529633982655") && !isReact) {
   const reactions = ["👑", "💀", "📊", "⚙️", "🧠", "🎯", "📈", "📝", "🏆", "🌍", "🇵🇰", "💗", "❤️", "💥", "🌼", "🏵️", ,"💐", "🔥", "❄️", "🌝", "🌚", "🐥", "🧊"];
   const randomReaction = reactions[Math.floor(Math.random() * reactions.length)];
   m.react(randomReaction);
@@ -301,7 +300,7 @@ if (!isReact && config.CUSTOM_REACT === 'true') {
 }
         
   //==========WORKTYPE============ 
-  if(!isOwner && config.MODE === "private") return
+  if(!isOwner && config.MODE === "public") return
   if(!isOwner && isGroup && config.MODE === "inbox") return
   if(!isOwner && !isGroup && config.MODE === "groups") return
    
