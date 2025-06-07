@@ -72,6 +72,17 @@ cmd({
 ╰╼━━━━━━━━━━━━━━━━━━╾╯
 > *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʜᴀɪᴋᴏ ᴍᴅx*  🌟
 `
+      await conn.sendMessage(from, {
+            text,
+            contextInfo: {
+                mentionedJid: [sender],
+                forwardingScore: 999,
+                isForwarded: true,
+                forwardedNewsletterMessageInfo: {
+                    newsletterJid: '120363398101781980@newsletter',
+                    newsletterName: "𝐇𝐀𝐈𝐊𝐎-𝐌𝐃𝐗-𝐕𝟐",
+                    serverMessageId: 143
+                }
     );
 
   } catch (error) {
