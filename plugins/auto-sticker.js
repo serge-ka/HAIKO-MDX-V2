@@ -16,7 +16,7 @@ cmd({
           await conn.sendMessage(
             from,
             {
-              sticker: { url: `https://files.catbox.moe/i3rzab`,
+              sticker: { url: data[keyword]},
               package: 'HAIKO-MDX-V2'
             },
             { quoted: mek }
