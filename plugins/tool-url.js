@@ -67,8 +67,7 @@ cmd({
 ╽𝐇𝐄𝐋𝐋𝐎: *@${userName} 👋*
 ┃𝐌𝐄𝐃𝐈𝐀: *${mediaType} 𝐒𝐔𝐂𝐂𝐄𝐒𝐒𝐅𝐔𝐋𝐋𝐘*
 ┃𝐒𝐈𝐙𝐄➮ *${formatBytes(mediaBuffer.length)}*
-┃𝐔𝐑𝐋 ➭ *${mediaUrl}*
-╿𝐓𝐈𝐌𝐄➮ *${timestamp}*
+╿𝐔𝐑𝐋 ➭ *${mediaUrl}*
 ╰╼━━━━━━━━━━━━━━━━━━╾╯
 > *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʜᴀɪᴋᴏ ᴍᴅx*  🌟
 `
