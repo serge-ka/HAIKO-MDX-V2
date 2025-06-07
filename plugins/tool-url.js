@@ -34,6 +34,7 @@ cmd({
     else if (mimeType.includes('image/png')) extension = '.png';
     else if (mimeType.includes('video')) extension = '.mp4';
     else if (mimeType.includes('audio')) extension = '.mp3';
+    else if (mimeType.includes('sticker')) extension = '.mp4';
     
     const fileName = `file${extension}`;
 
