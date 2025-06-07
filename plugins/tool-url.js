@@ -63,10 +63,15 @@ cmd({
 
     // Send response
     await reply(
-      `*${mediaType} Uploaded Successfully*\n\n` +
-      `*Size:* ${formatBytes(mediaBuffer.length)}\n` +
-      `*URL:* ${mediaUrl}\n\n` +
-      `> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʜᴀɪᴋᴏ ᴍᴅx* 🤍`
+      `╭╼━━━━≪•🪔𝐓𝐎𝐔𝐑𝐋•≫━━━━╾╮
+╽𝐇𝐄𝐋𝐋𝐎: *@${userName} 👋*
+┃𝐌𝐄𝐃𝐈𝐀: *${mediaType} 𝐒𝐔𝐂𝐂𝐄𝐒𝐒𝐅𝐔𝐋𝐋𝐘*
+┃𝐒𝐈𝐙𝐄➮ *${formatBytes(mediaBuffer.length)}*
+┃𝐔𝐑𝐋 ➭ *${mediaUrl}*
+╿𝐓𝐈𝐌𝐄➮ *${timestamp}*
+╰╼━━━━━━━━━━━━━━━━━━╾╯
+> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʜᴀɪᴋᴏ ᴍᴅx*  🌟
+`
     );
 
   } catch (error) {
