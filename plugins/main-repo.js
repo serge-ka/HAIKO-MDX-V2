@@ -163,7 +163,7 @@ ${repoData.description || 'No description'}
 ◈ URL: ${repoData.html_url}
 
 DESCRIPTION:
-${repoData.description || 'NO DESCRIPTION PROVIDER'S}
+${repoData.description || 'NO DESCRIPTION PROVIDED'}
 
 > *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʜᴀɪᴋᴏ ᴍᴅx*`;
 
