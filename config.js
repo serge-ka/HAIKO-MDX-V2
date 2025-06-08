@@ -15,9 +15,9 @@ AUTO_STATUS_REACT: process.env.AUTO_STATUS_REACT || "false",
 // make true if you want auto reply on status 
 AUTO_STATUS_MSG: process.env.AUTO_STATUS_MSG || "*SEEN YOUR STATUS BY HAIKO-MDX-V2 🐺*",
 // set the auto reply massage on status reply  
-WELCOME: process.env.WELCOME || "true",
+WELCOME: process.env.WELCOME || "false",
 // true if want welcome and goodbye msg in groups    
-ADMIN_EVENTS: process.env.ADMIN_EVENTS || "true",
+ADMIN_EVENTS: process.env.ADMIN_EVENTS || "false",
 // make true to know who dismiss or promoted a member in group
 ANTI_LINK: process.env.ANTI_LINK || "true",
 // make anti link true,false for groups 
@@ -29,7 +29,7 @@ PREFIX: process.env.PREFIX || ".",
 // add your prifix for bot   
 BOT_NAME: process.env.BOT_NAME || "𝐇𝐀𝐈𝐊𝐎-𝐌𝐃𝐗-𝐕𝟐",
 // add bot namw here for menu
-STICKER_NAME: process.env.STICKER_NAME || "༺𒋲𖥔⃟𝐏𝐑𝐎𝐅𝐄𝐒𝐒𝐄𝐔𝐑↯𝐗-𝐓𝐑𝐄𝐌𝐄𓅃𒋲🛰️",
+STICKER_NAME: process.env.STICKER_NAME || "🌸♡𝐋𝐄 𝐌𝐄𝐂  𝐃'𝐔𝐍𝐄 𝐒𝐄𝐔𝐋𝐄 𝐌𝐄𝐔𝐅♡💕",
 // type sticker pack name 
 CUSTOM_REACT: process.env.CUSTOM_REACT || "false",
 // make this true for custum emoji react    
@@ -37,7 +37,7 @@ CUSTOM_REACT_EMOJIS: process.env.CUSTOM_REACT_EMOJIS || "💝,💖,💗,❤️�
 // chose custom react emojis by yourself 
 DELETE_LINKS: process.env.DELETE_LINKS || "true",
 // automatic delete links witho remove member 
-OWNER_NUMBER: process.env.OWNER_NUMBER || "+529633982655",
+OWNER_NUMBER: process.env.OWNER_NUMBER || "529633982655",
 // add your bot owner number
 OWNER_NAME: process.env.OWNER_NAME || "🌟𝐗-𝐓𝐑𝐄𝐌𝐄💕",
 // add bot owner name
@@ -71,7 +71,7 @@ AUTO_TYPING: process.env.AUTO_TYPING || "false",
 // true for automatic show typing   
 READ_CMD: process.env.READ_CMD || "false",
 // true if want mark commands as read 
-DEV: process.env.DEV || "+529633982655",
+DEV: process.env.DEV || "529633982655",
 //replace with your whatsapp number        
 ANTI_VV: process.env.ANTI_VV || "true",
 // true for anti once view 
