@@ -6,7 +6,7 @@
   "scripts": {
     "start": "pm2 start index.js --deep-monitoring --attach --name HAIKO-MDX-V1",
     "stop": "pm2 stop HAIKO-MDX-V2",
-    "restart": "pm2 restart HAIKO-MDX-V1"
+    "restart": "pm2 restart HAIKO-MDX-V2"
   },
   "dependencies": {
     "@whiskeysockets/baileys": "^6.7.9",
