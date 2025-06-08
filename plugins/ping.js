@@ -37,7 +37,7 @@ async (conn, mek, m, { from, quoted, sender, reply }) => {
 ┃🌟𝐏𝐈𝐍𝐆: *${responseTime.toFixed(2)}MS ${reactionEmoji}*
 ┃⏰𝐓𝐈𝐌𝐄: *${timestamp}*
 ╰━━━━━━⦉𝐗𝐓𝐑𝐄𝐌𝐄⦊━━━━━━╯
-> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʜᴀɪᴋᴏ ᴍᴅx 💙*`;
+> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʜᴀɪᴋᴏ ᴍᴅx* 💙`;
 
         await conn.sendMessage(from, {
             text,
@@ -79,7 +79,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃ ⏳ *PING* : *${ping}MS*
 ┃ ⏲️ *CHECKED AT* : *${timestamp}*
 ╰━━━━━━━━━━━━━━━━━━━━╯
-> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʜᴀɪᴋᴏ ᴍᴅx 💙*` }, { quoted: message })
+> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʜᴀɪᴋᴏ ᴍᴅx* 💙` }, { quoted: message })
     } catch (e) {
         console.log(e)
         reply(`${e}`)
