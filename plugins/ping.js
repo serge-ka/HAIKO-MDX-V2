@@ -6,7 +6,7 @@ cmd({
     alias: ["speed","pong"],use: '.ping',
     desc: "Check bot's response time.",
     category: "main",
-    react: "🌟",
+    react: "🍁",
     filename: __filename
 },
 async (conn, mek, m, { from, quoted, sender, reply }) => {
@@ -32,9 +32,12 @@ async (conn, mek, m, { from, quoted, sender, reply }) => {
         const end = new Date().getTime();
         const responseTime = (end - start) / 1000;
 
-        const text = `╔══════⪻•𝐏𝐈𝐍𝐆•⪼══════╗
-> *HAIKO-MDX-V2 SPEED: ${responseTime.toFixed(2)}MS ${reactionEmoji}*
-╚══════⦉𝐗𝐓𝐑𝐄𝐌𝐄⦊══════╝`;
+        const text = `╭━━━━⪻•𝐏𝐈𝐍𝐆 𝐓𝐄𝐒𝐓•⪼━━━━╮
+┃📡𝐁𝐎𝐓: *𝐇𝐀𝐈𝐊𝐎 𝐌𝐃𝐗 𝐕𝟐*
+┃🌟𝐏𝐈𝐍𝐆: *${responseTime.toFixed(2)}MS ${reactionEmoji}*
+┃⏰𝐓𝐈𝐌𝐄: *${timestamp}*
+╰━━━━━━⦉𝐗𝐓𝐑𝐄𝐌𝐄⦊━━━━━━╯
+> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʜᴀɪᴋᴏ ᴍᴅx 💙*`;
 
         await conn.sendMessage(from, {
             text,
