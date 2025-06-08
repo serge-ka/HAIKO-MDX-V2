@@ -6,7 +6,7 @@ cmd({
     pattern: "repo",
     alias: ["sc", "script", "info"],
     desc: "Fetch GitHub repository information",
-    react: "📨",
+    react: "⏳",
     category: "info",
     filename: __filename,
 },
@@ -23,10 +23,10 @@ async (conn, mek, m, { from, reply }) => {
         // Format 1: Classic Box
         const style1 = `╭───『 ${config.BOT_NAME} 𝐑𝐄𝐏𝐎 』───⳹
 │
-│ 📦 *Repository*: ${repoData.name}
-│ 👑 *Owner*: ${repoData.owner.login}
-│ ⭐ *Stars*: ${repoData.stargazers_count}
-│ ⑂ *Forks*: ${repoData.forks_count}
+│ 📦 *REPOSITORY*: ${repoData.name}
+│ 👑 *OWNER*: ${repoData.owner.login}
+│ ⭐ *STARS*: ${repoData.stargazers_count}
+│ ⑂ *FORKS*: ${repoData.forks_count}
 │ 🔗 *URL*: ${repoData.html_url}
 │
 │ 📝 *Description*:
@@ -49,11 +49,11 @@ async (conn, mek, m, { from, reply }) => {
         // Format 3: Fancy Borders
         const style3 = `▄▀▄▀▄ 𝐑𝐄𝐏𝐎𝐒𝐈𝐓𝐎𝐑𝐘 𝐈𝐍𝐅𝐎 ▄▀▄▀▄
 
-  ♢ *Project*: ${repoData.name}
-  ♢ *Author*: ${repoData.owner.login}
-  ♢ *Stars*: ${repoData.stargazers_count} ✨
-  ♢ *Forks*: ${repoData.forks_count} ⑂
-  ♢ *Updated*: ${new Date(repoData.updated_at).toLocaleDateString()}
+  ♢ *PROJECT*: ${repoData.name}
+  ♢ *AUTHOR*: ${repoData.owner.login}
+  ♢ *STARS*: ${repoData.stargazers_count} ✨
+  ♢ *FORKS*: ${repoData.forks_count} ⑂
+  ♢ *UPDATED*: ${new Date(repoData.updated_at).toLocaleDateString()}
   
   🔗 ${repoData.html_url}
   
@@ -63,12 +63,12 @@ async (conn, mek, m, { from, reply }) => {
         const style4 = `┌──────────────────────┐
 │  ♻️ ${config.BOT_NAME} 𝐑𝐄𝐏𝐎  ♻️  │
 ├──────────────────────┤
-│ • Name: ${repoData.name}
-│ • Owner: ${repoData.owner.login}
-│ • Stars: ${repoData.stargazers_count}
-│ • Forks: ${repoData.forks_count}
+│ • NAME: ${repoData.name}
+│ • OWNER: ${repoData.owner.login}
+│ • STARS: ${repoData.stargazers_count}
+│ • FORKS: ${repoData.forks_count}
 │ • URL: ${repoData.html_url}
-│ • Desc: ${repoData.description || 'None'}
+│ • DESC: ${repoData.description || 'None'}
 └──────────────────────┘
 > ${config.DESCRIPTION}`;
 
@@ -81,9 +81,9 @@ async (conn, mek, m, { from, reply }) => {
   ⭐ ${repoData.stargazers_count}  ⑂ ${repoData.forks_count}
   🔗 ${repoData.html_url}
   
-  📜 ${repoData.description || 'No description'}
+  📜 ${repoData.description || 'NO DESCRIPTION'}
   
-  > ${config.DESCRIPTION}`;
+> ${config.DESCRIPTION}`;
 
         // Format 6: Retro Terminal
         const style6 = `╔══════════════════════╗
@@ -103,10 +103,10 @@ async (conn, mek, m, { from, reply }) => {
 │  📨  𝐑𝐄𝐏𝐎  │
 └───────────────┘
 │
-│ *Project*: ${repoData.name}
-│ *Author*: ${repoData.owner.login}
+│ *PROJECT*: ${repoData.name}
+│ *AUTHOR*: ${repoData.owner.login}
 │
-│ ✨ ${repoData.stargazers_count} Stars
+│ ✨ ${repoData.stargazers_count} STARS 
 │ ⑂ ${repoData.forks_count} Forks
 │
 │ 🔗 ${repoData.html_url}
@@ -114,12 +114,12 @@ async (conn, mek, m, { from, reply }) => {
 ┌───────────────┐
 │  📝  𝐃𝐄𝐒𝐂  │
 └───────────────┘
-${repoData.description || 'No description'}
+${repoData.description || 'NO DESCRIPTION'}
 
 > ${config.DESCRIPTION}`;
 
         // Format 8: Social Media Style
-        const style8 = `✦ ${config.BOT_NAME} Repository ✦
+        const style8 = `✦ ${config.BOT_NAME} REPOSITORY ✦
 
 📌 *${repoData.name}*
 👤 @${repoData.owner.login}
@@ -127,9 +127,9 @@ ${repoData.description || 'No description'}
 ⭐ ${repoData.stargazers_count} Stars | ⑂ ${repoData.forks_count} Forks
 🔄 Last updated: ${new Date(repoData.updated_at).toLocaleDateString()}
 
-🔗 GitHub: ${repoData.html_url}
+🔗 GITHUB: ${repoData.html_url}
 
-${repoData.description || 'No description available'}
+${repoData.description || 'NO DESCRIPTION AVAILABLE'}
 
 > ${config.DESCRIPTION}`;
 
@@ -139,10 +139,10 @@ ${repoData.description || 'No description available'}
 ╚♫═🎧═♫══════════╝
 
 •・゜゜・* ✧  *・゜゜・•
- ✧ *Name*: ${repoData.name}
- ✧ *Owner*: ${repoData.owner.login}
- ✧ *Stars*: ${repoData.stargazers_count}
- ✧ *Forks*: ${repoData.forks_count}
+ ✧ *NAME*: ${repoData.name}
+ ✧ *OWNER*: ${repoData.owner.login}
+ ✧ *STARS*: ${repoData.stargazers_count}
+ ✧ *FORKS*: ${repoData.forks_count}
 •・゜゜・* ✧  *・゜゜・•
 
 🔗 ${repoData.html_url}
@@ -156,14 +156,14 @@ ${repoData.description || 'No description'}
 ┃  𝐑𝐄𝐏𝐎𝐒𝐈𝐓𝐎𝐑𝐘 𝐑𝐄𝐏𝐎𝐑𝐓  ┃
 ┗━━━━━━━━━━━━━━━━━━┛
 
-◈ Project: ${repoData.name}
-◈ Maintainer: ${repoData.owner.login}
-◈ Popularity: ★ ${repoData.stargazers_count} | ⑂ ${repoData.forks_count}
-◈ Last Update: ${new Date(repoData.updated_at).toLocaleDateString()}
+◈ PROJECT: ${repoData.name}
+◈ MAINTAINER: ${repoData.owner.login}
+◈ POPULARITY: ★ ${repoData.stargazers_count} | ⑂ ${repoData.forks_count}
+◈ LAST UPDATE: ${new Date(repoData.updated_at).toLocaleDateString()}
 ◈ URL: ${repoData.html_url}
 
-Description:
-${repoData.description || 'No description provided'}
+DESCRIPTION:
+${repoData.description || 'NO DESCRIPTION PROVIDER'S}
 
 > *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʜᴀɪᴋᴏ ᴍᴅx*`;
 
