@@ -60,11 +60,11 @@ cmd({
 
     await reply(
 `╭╼━━⪨•𝐓𝐎𝐔𝐑𝐋🪔•⪩━━━╾╮
-╽ 𝐇𝐀𝐈𝐊𝐎 𝐌𝐃𝐗 𝐔𝐑𝐋
-┃ 𝐌𝐄𝐃𝐈𝐀: *${mediaType} 𝐒𝐔𝐂𝐂𝐄𝐒𝐒𝐅𝐔𝐋𝐋𝐘*
-┃ 𝐒𝐈𝐙𝐄: *${formatBytes(mediaBuffer.length)}*
-┃ 𝐔𝐑𝐋: *${mediaUrl}*
-╿ 𝐓𝐈𝐌𝐄: *${timestamp}*
+╽ 📥𝐇𝐀𝐈𝐊𝐎 𝐌𝐃𝐗 𝐔𝐑𝐋
+┃ 📝𝐌𝐄𝐃𝐈𝐀: *${mediaType} 𝐒𝐔𝐂𝐂𝐄𝐒𝐒𝐅𝐔𝐋𝐋𝐘*
+┃ 🏋️‍♂️𝐒𝐈𝐙𝐄: *${formatBytes(mediaBuffer.length)}*
+┃ ⏳𝐔𝐑𝐋: *${mediaUrl}*
+╿ ⏰𝐓𝐈𝐌𝐄: *${timestamp}*
 ╰╼━━━━━━━━━━━━━━━━╾╯
 > *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʜᴀɪᴋᴏ ᴍᴅx* 🌟`
     );
