@@ -1,20 +1,20 @@
 {
   "name": "HAIKO-MDX-V2",
   "version": "2.0.0",
-  "description": "A WhatsApp Bot Created By XTREME",
+  "description": "A WhatsApp Bot Created By XTREM PROFESSOR",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name HAIKO-MDX-V2",
+    "start": "pm2 start index.js --deep-monitoring --attach --name HAIKO-MDX-V1",
     "stop": "pm2 stop HAIKO-MDX-V2",
-    "restart": "pm2 restart HAIKO-MDX-V2"
+    "restart": "pm2 restart HAIKO-MDX-V1"
   },
   "dependencies": {
-    "@whiskeysockets/baileys": "^6.7.18",
+    "@whiskeysockets/baileys": "^6.7.9",
     "@adiwajshing/keyed-db": "^0.2.4",
     "@dark-yasiya/yt-dl.js": "1.0.5",
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
     "@vitalets/google-translate-api": "^9.2.0",
-    "@dark-yasiya/scrap": "1.0.1",
+    "@dark-yasiya/scrap": "1.0.1",    
     "pino": "^7.0.5",
     "pm2": "^6.0.5",
     "util": "^0.12.4",
