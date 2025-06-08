@@ -75,17 +75,17 @@ cmd({
 
     const { desc, thumb, video_sd, video_hd } = data.result;
 
-    const caption = `╭━━━〔 *TWITTER DOWNLOADER* 〕━━━⊷\n`
+    const caption = `╭━━⪨ *TWITTER DOWNLOADER* ⪩━━⊷\n`
       + `┃▸ *Description:* ${desc || "No description"}\n`
       + `╰━━━⪼\n\n`
-      + `📹 *Download Options:*\n`
-      + `1️⃣  *SD Quality*\n`
-      + `2️⃣  *HD Quality*\n`
-      + `🎵 *Audio Options:*\n`
-      + `3️⃣  *Audio*\n`
-      + `4️⃣  *Document*\n`
-      + `5️⃣  *Voice*\n\n`
-      + `📌 *Reply with the number to download your choice.*`;
+      + `📹 *DOWNLOAD OPTIONS:*\n`
+      + `1️⃣  *SD Qual6ity*\n`
+      + `2️⃣  *HD QUALITY*\n`
+      + `🎵 *AUDIO OPTIONS:*\n`
+      + `3️⃣  *AUDIO*\n`
+      + `4️⃣  *DOCUMENT*\n`
+      + `5️⃣  *VOICE*\n\n`
+      + `📌 *REPLY WITH THE NUMBER TO DOWNLOAD YOUR CHOICE.*`;
 
     const sentMsg = await conn.sendMessage(from, {
       image: { url: thumb },
@@ -197,9 +197,9 @@ cmd({
       react: { text: "⬆️", key: m.key }
     });
 
-    const caption = `╭━━━〔 *MEDIAFIRE DOWNLOADER* 〕━━━⊷\n`
-      + `┃▸ *File Name:* ${file_name}\n`
-      + `┃▸ *File Type:* ${mime_type}\n`
+    const caption = `╭━━⪨ *MEDIAFIRE DOWNLOADER* ⪩━━⊷\n`
+      + `┃▸ *FILE NAME:* ${file_name}\n`
+      + `┃▸ *FILE TYPE:* ${mime_type}\n`
       + `╰━━━⪼\n\n`
       + `📥 *Downloading your file...*`;
 
@@ -247,12 +247,12 @@ cmd({
     const app = data.datalist.list[0];
     const appSize = (app.size / 1048576).toFixed(2); // Convert bytes to MB
 
-    const caption = `╭━━━〔 *APK Downloader* 〕━━━┈⊷
-┃ 📦 *Name:* ${app.name}
-┃ 🏋 *Size:* ${appSize} MB
-┃ 📦 *Package:* ${app.package}
-┃ 📅 *Updated On:* ${app.updated}
-┃ 👨‍💻 *Developer:* ${app.developer.name}
+    const caption = `╭━━⪨ *APK Downloader* ⪩━━┈⊷
+┃ 📦 *NAME:* ${app.name}
+┃ 🏋 *SIZE:* ${appSize} MB
+┃ 📦 *PACKAGE:* ${app.package}
+┃ 📅 *UPDATED ON:* ${app.updated}
+┃ 👨‍💻 *DEVELOPER:* ${app.developer.name}
 ╰━━━━━━━━━━━━━━━┈⊷
  > *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴇᴠ ᴘʀᴏғᴇssᴇᴜʀ*`;
 
