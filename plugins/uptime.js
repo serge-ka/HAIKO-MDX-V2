@@ -12,8 +12,7 @@ const alive = async (m, Matrix) => {
   const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).toLowerCase() : '';
     if (['alive', 'hansuptime', 'uptime'].includes(cmd)) {
 
-  const uptimeMessage = `
-╔════♡𝐔𝐏𝐓𝐈𝐌𝐄♡════╗
+  const uptimeMessage = `╔════♡𝐔𝐏𝐓𝐈𝐌𝐄♡════╗
 ║ *${days} Day*
 ║ *${hours} Hour*
 ║ *${minutes} Minute*
@@ -58,7 +57,9 @@ const alive = async (m, Matrix) => {
                   mentionedJid: [m.sender], 
                   forwardingScore: 999,
                   isForwarded: true,
-                forwardedNewsletterMessageInfo: {                  newsletterName: "𝐇𝐀𝐈𝐊𝐎 𝐌𝐃𝐗",
+                forwardedNewsletterMessageInfo: {
+                  newsletterJid: '529633982655',
+                  newsletterName: "𝐇𝐀𝐈𝐊𝐎 𝐌𝐃𝐗",
                   serverMessageId: 143
                 }
               }
@@ -74,3 +75,4 @@ const alive = async (m, Matrix) => {
 };
 
 export default alive;
+            
