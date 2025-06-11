@@ -122,7 +122,7 @@ const port = process.env.PORT || 9090;
 ║     https://github.com/PROFESSEURMDX/HAIKO-MDX-V2
 ║
 ╚══════════════════╝
-> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴇᴠ ᴘʀᴏғᴇssᴇᴜʀ*`;
+> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴇᴠ xᴛʀᴇᴍᴇ*`;
     conn.sendMessage(conn.user.id, { image: { url: `https://i.ibb.co/FkmnPMcn/fam-ofc.jpg` }, caption: up })
   }
   })
