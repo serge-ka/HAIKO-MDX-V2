@@ -1,54 +1,68 @@
-// code by ⿻ ⌜ DEV PROFESSEUR ⌟⿻⃮͛💫
-
-const axios = require("axios");
-const config = require('../config');
-const { cmd } = require('../command');
+const { cmd } = require("../command");
+const fetch = require("node-fetch");
 
 cmd({
-  pattern: "sss",
-  alias: ["ssweb"],
-  react: "💫",
+  pattern: 'ss',
+  alias: ['ssweb'],
+  react: '🖼',
   desc: "Download screenshot of a given link.",
   category: "other",
   use: ".ss <link>",
-  filename: __filename,
-}, 
-async (conn, mek, m, {
-  from, l, quoted, body, isCmd, command, args, q, isGroup, sender, 
-  senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, 
-  groupMetadata, groupName, participants, isItzcp, groupAdmins, 
-  isBotAdmins, isAdmins, reply 
-}) => {
+  filename: __filename
+}, async (client, m, msg, { from, reply, q }) => {
+
+  // Vérifie si un lien est fourni
   if (!q) {
     return reply("Please provide a URL to capture a screenshot.");
   }
 
-  try {
-    // created by jawad tech 
-    const response = await axios.get(`https://api.davidcyriltech.my.id/ssweb?url=${q}`);
-    const screenshotUrl = response.data.screenshotUrl;
+  // Vérifie si l'URL commence bien par http:// ou https://
+  if (!/^https?:\/\//.test(q)) {
+    return reply("❗ Please provide a valid URL starting with http:// or https://");
+  }
 
-    // give credit and use
-    const imageMessage = {
-      image: { url: screenshotUrl },
-      caption: "*WEB SS DOWNLOADER*\n\n> *© ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʜᴀɪᴋᴏ ᴍᴅx*",
+  // Fonction pour envoyer l'image
+  const sendScreenshot = async (imageBuffer) => {
+    return await client.sendMessage(from, {
+      image: imageBuffer,
+      caption: `*📸 Screenshot Tool*\n\n🌐 *URL:* ${q}\n\n> _*© ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅʏʙʏ ᴛᴇᴄʜ*_`,
       contextInfo: {
-        mentionedJid: [m.sender],
+        mentionedJid: [msg.sender],
         forwardingScore: 999,
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
-          newsletterJid: '120363372853772240@newsletter',
+          newsletterJid: "120363398101781980@newsletter",
           newsletterName: "𝐇𝐀𝐈𝐊𝐎-𝐌𝐃𝐗-𝐕𝟐",
-          serverMessageId: 143,
-        },
-      },
-    };
+          serverMessageId: 143
+        }
+      }
+    }, { quoted: msg });
+  };
 
-    await conn.sendMessage(from, imageMessage, { quoted: m });
+  try {
+    // Appel API Zenz pour obtenir la capture d'écran
+    const apiUrl = "https://zenz.biz.id/tools/ssweb?url=" + encodeURIComponent(q);
+    const response = await fetch(apiUrl);
+
+    const contentType = response.headers.get("content-type");
+
+    // Si l’API renvoie directement une image
+    if (contentType && contentType.startsWith("image/")) {
+      const imageBuffer = await response.buffer();
+      return await sendScreenshot(imageBuffer);
+    }
+
+    // Sinon, on récupère l’URL de l’image dans la réponse JSON
+    const json = await response.json();
+    if (!json.status || !json.result) {
+      throw new Error("Failed to get screenshot");
+    }
+
+    const imageBuffer = await fetch(json.result).then(res => res.buffer());
+    return await sendScreenshot(imageBuffer);
+
   } catch (error) {
     console.error(error);
-    reply("Failed to capture the screenshot. Please try again.");
+    reply("❌ Failed to capture the screenshot. Please try again later.");
   }
 });
-
-// ⿻ ⌜ HAIKO-MDX ⌟⿻⃮͛💫
