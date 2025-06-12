@@ -13,7 +13,7 @@ cmd({
 async (conn, mek, m, { from, args, reply, isOwner }) => {
     try {
         if (!isOwner) return reply("❌ You don't have permission to use this command!");
-        if (!args[0]) return reply("❌ Please provide a command name. Example: `.get alive`");
+        if (!args[0]) return reply("❌ Please provide a command name. Example: `.cmd alive`");
 
         const commandName = args[0].toLowerCase();
         const commandData = commands.find(cmd => cmd.pattern === commandName || (cmd.alias && cmd.alias.includes(commandName)));
