@@ -25,7 +25,7 @@ cmd({
   const sendScreenshot = async (imageBuffer) => {
     return await client.sendMessage(from, {
       image: imageBuffer,
-      caption: `*📸 Screenshot Tool*\n\n🌐 *URL:* ${q}\n\n> _*© ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅʏʙʏ ᴛᴇᴄʜ*_`,
+      caption: `*📸 Screenshot Tool*\n\n🌐 *URL:* ${q}\n\n> _*© ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴇᴠ xᴛʀᴇᴍᴇ*_`,
       contextInfo: {
         mentionedJid: [msg.sender],
         forwardingScore: 999,
