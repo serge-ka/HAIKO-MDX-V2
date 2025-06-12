@@ -30,18 +30,18 @@ async (conn, mek, m, { from, participants, reply, isGroup, senderNumber, groupAd
         let totalMembers = participants ? participants.length : 0;
         if (totalMembers === 0) return reply("❌ No members found in this group.");
 
-        let emojis = ['*├❒┃➢🪐*'];
+        let emojis = ['*├❒┃➢🪐*','*├❒┃➢🍁*','*├❒┃➢💥*','*├❒┃➢🩸*','*├❒┃➢❄️*','*├❒┃➢🕸️*'];
         let randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
 
         // Proper message extraction
         let message = body.slice(body.indexOf(command) + command.length).trim();
-        if (!message) message = "ATTENTION EVERYONE"; // Default message
+        if (!message) message = "HELLO EVERYONE"; // Default message
 
         let teks = `*╭╼━━━━━⧼𝙼𝙴𝙽𝚃𝙸𝙾𝙽𝚂⧽━━━━━╾╮*
 *│👥𝙶𝚁𝙾𝚄𝙿: ${groupName}*
 *│🎰𝙼𝙴𝙼𝙱𝙴𝚁𝚂: ${totalMembers}*
 *│📝𝙼𝙴𝚂𝚂𝙰𝙶𝙴: ${message}*
-*│🛡️𝙰𝙳𝙼𝙸𝙽𝚂: not defined*
+*│🛡️𝙰𝙳𝙼𝙸𝙽𝚂: 𝙽𝙾𝚃 𝙳𝙴𝙵𝙸𝙽𝙴𝙳*
 *╰╼━━━━━━━━━━━━━━━━━━╾╯*
 
 *╭╼┉┉┉┉┉〔𝚃𝙰𝙶𝙰𝙻𝙻𝚂〕┉┉┉┉┉╮*
