@@ -21,11 +21,14 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ├❁┃•  Prefix : *➥${config.PREFIX}*
 ├❁┃•  Platform : *GITHUB*
 ├❁┃•  Version : *2.0.0*
+├❁┃•  Mode : *${config.MODE}*
 ├❁┃•  command : *${totalCommands}*
 ├❁┃•  Runtime : *${runtime(process.uptime())}*
 ├❁╰───────────────┈⊷
 ╰━━━━━━━━━━━━━━━━━┈⊷
 
+*WELCOME TO HAIKO MDX V2*
+-------------------------
 ╭━⪨👥𝐆𝐑𝐎𝐔𝐏 𝐌𝐄𝐍𝐔 ⪩━┈⊷
 ├❒╭───────────────·๏
 ├❒┃➢  grouplink
