@@ -5,28 +5,75 @@ cmd({
   pattern: "fancy",
   alias: ["font", "style"],
   react: "✍️",
-  desc: "Convert text into various fonts.",
+  desc: "Convert text into various fancy fonts.",
   category: "tools",
   filename: __filename
-}, async (conn, m, store, { from, quoted, args, q, reply }) => {
+}, async (conn, mek, m, {
+  from,
+  quoted,
+  body,
+  isCmd,
+  command,
+  args,
+  q,
+  reply
+}) => {
   try {
-    if (!q) {
-      return reply("❎ Please provide text to convert into fancy fonts.\n\n*Example:* .fancy Professeur");
-    }
+    if (!q) return reply("❎ Please provide text to convert.\n\n*Example:* .fancy Hello");
 
     const apiUrl = `https://www.dark-yasiya-api.site/other/font?text=${encodeURIComponent(q)}`;
-    const response = await axios.get(apiUrl);
-    
-    if (!response.data.status) {
-      return reply("❌ Error fetching fonts. Please try again later.");
+    const res = await axios.get(apiUrl);
+
+    if (!res.data.status || !Array.isArray(res.data.result)) {
+      return reply("❌ Error fetching fonts. Try again later.");
     }
 
-    const fonts = response.data.result.map(item => `*${item.name}:*\n${item.result}`).join("\n\n");
-    const resultText = `✨ *Fancy Fonts Converter* ✨\n\n${fonts}\n\n> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʜᴀɪᴋᴏ ᴍᴅx*`;
+    const fonts = res.data.result;
+    const maxDisplay = 44;
+    const displayList = fonts.slice(0, maxDisplay);
 
-    await conn.sendMessage(from, { text: resultText }, { quoted: m });
+    let menuText = "╭──⪨ *FANCY STYLES* ⪩──⬣\n";
+    displayList.forEach((f, i) => {
+      menuText += `┃ ${i + 1}. ${f.result}\n`;
+    });
+    menuText += "╰──────────────⬣\n\n📌 *Reply with the number to select a font style for:*\n❝ " + q + " ❞";
+
+    const sentMsg = await conn.sendMessage(from, {
+      text: menuText
+    }, { quoted: m });
+
+    const messageID = sentMsg.key.id;
+
+    const messageHandler = async (msgData) => {
+      const receivedMsg = msgData.messages?.[0];
+      if (!receivedMsg || !receivedMsg.message) return;
+
+      const receivedText = receivedMsg.message.conversation ||
+        receivedMsg.message.extendedTextMessage?.text;
+
+      const senderID = receivedMsg.key.remoteJid;
+      const isReplyToBot = receivedMsg.message.extendedTextMessage?.contextInfo?.stanzaId === messageID;
+
+      if (isReplyToBot && senderID === from) {
+        const selectedNumber = parseInt(receivedText.trim());
+        if (isNaN(selectedNumber) || selectedNumber < 1 || selectedNumber > displayList.length) {
+          return conn.sendMessage(from, {
+            text: "❎ Invalid selection. Please reply with a number from 1 to " + displayList.length + ".",
+          }, { quoted: receivedMsg });
+        }
+
+        const chosen = displayList[selectedNumber - 1];
+        const finalText = `✨ *Your Text in ${chosen.name || 'Selected Style'}:*\n\n${chosen.result}\n\n> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴇᴠ xᴛʀᴇᴍᴇ*`;
+
+        await conn.sendMessage(from, {
+          text: finalText
+        }, { quoted: receivedMsg });
+      }
+    };
+
+    conn.ev.on("messages.upsert", messageHandler);
   } catch (error) {
-    console.error("❌ Error in fancy command:", error);
-    reply("⚠️ An error occurred while fetching fonts.");
+    console.error("❌ Error in .fancy:", error);
+    reply("⚠️ An error occurred while processing.");
   }
 });
