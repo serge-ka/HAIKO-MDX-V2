@@ -22,7 +22,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ├❁┃•  Platform : *GITHUB*
 ├❁┃•  Version : *2.0.0*
 ├❁┃•  Mode : *${config.MODE}*
-├❁┃•  command : *${totalCommands}*
+├❁┃•  command : *𝟹𝟶𝟶*
 ├❁┃•  Runtime : *${runtime(process.uptime())}*
 ├❁╰───────────────┈⊷
 ╰━━━━━━━━━━━━━━━━━┈⊷
