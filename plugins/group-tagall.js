@@ -4,7 +4,7 @@ const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, runtime, sleep, 
 
 cmd({
     pattern: "tagall",
-    react: "🔊",
+    react: "📣",
     alias: ["gc_tagall"],
     desc: "To Tag all Members",
     category: "group",
@@ -35,16 +35,16 @@ async (conn, mek, m, { from, participants, reply, isGroup, senderNumber, groupAd
 
         // Proper message extraction
         let message = body.slice(body.indexOf(command) + command.length).trim();
-        if (!message) message = "Attention Everyone"; // Default message
+        if (!message) message = "ATTENTION EVERYONE"; // Default message
 
-        let teks = `▢ Group : *${groupName}*\n▢ Members : *${totalMembers}*\n▢ Message: *${message}*\n\n┌───⊷ *MENTIONS*\n`;
+        let teks = `❁ Group : *${groupName}*\n❁ Members : *${totalMembers}*\n❁ Message: *${message}*\n\n*┌─────⊷* *MENTIONS*\n`;
 
         for (let mem of participants) {
             if (!mem.id) continue; // Prevent undefined errors
             teks += `${randomEmoji} @${mem.id.split('@')[0]}\n`;
         }
 
-        teks += "└──✪ HAIKO ┃ MDX ✪──";
+        teks += "└────✪ HAIKO ┃ MDX ✪────";
 
         conn.sendMessage(from, { text: teks, mentions: participants.map(a => a.id) }, { quoted: mek });
 
