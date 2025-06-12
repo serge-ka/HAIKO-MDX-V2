@@ -737,7 +737,7 @@ if (!isReact && config.CUSTOM_REACT === 'true') {
                         global.email
                     }\nitem2.X-ABLabel:GitHub\nitem3.URL:https://github.com/${
                         global.github
-                    }/khan-xmd\nitem3.X-ABLabel:GitHub\nitem4.ADR:;;${
+                    }/megalodon-md\nitem3.X-ABLabel:GitHub\nitem4.ADR:;;${
                         global.location
                     };;;;\nitem4.X-ABLabel:Region\nEND:VCARD`,
                 });
