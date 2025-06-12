@@ -3,8 +3,8 @@ const axios = require('axios');
 
 cmd({
   'pattern': "couplepp",
-  'alias': ["couple", "cpp"],
-  'react': '🍒',
+  'alias': ["couple", "pp"],
+  'react': '💑',
   'desc': "Get a male and female couple profile picture.",
   'category': "image",
   'use': ".couplepp",
@@ -17,7 +17,7 @@ cmd({
   try {
     reply("*💑 Fetching couple profile pictures...*");
     
-    const response = await axios.get("https://api.davidcyriltech.my.id/couplepp");
+    const response = await axios.get("https://apis.davidcyriltech.my.id/couplepp");
 
     if (!response.data || !response.data.success) {
       return reply("❌ Failed to fetch couple profile pictures. Please try again later.");
