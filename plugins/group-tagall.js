@@ -30,7 +30,7 @@ async (conn, mek, m, { from, participants, reply, isGroup, senderNumber, groupAd
         let totalMembers = participants ? participants.length : 0;
         if (totalMembers === 0) return reply("❌ No members found in this group.");
 
-        let emojis = ['├❒┃➢'];
+        let emojis = ['*├❒┃➢*'];
         let randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
 
         // Proper message extraction
