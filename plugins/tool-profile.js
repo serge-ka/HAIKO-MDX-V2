@@ -100,9 +100,7 @@ async (conn, mek, m, { from, sender, isGroup, reply, quoted, participants }) => 
 ${formattedBio}
 ┃*⚙️ ACCOUNT INFO:*
 ┃✅ REGISTERED: ${user.isUser ? "Yes" : "No"}
-┃🛡️ VERIFIED: ${user.verifiedName ? "✅ Verified" : "❌ Not verified
-               ╰╼━━━━━━━━━━━━━━━━╾╯
-               > ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴇᴠ xᴛʀᴇᴍᴇ"}
+┃🛡️ VERIFIED: ${user.verifiedName ? "✅ VERIFIED" : "❌ Not verified ╰╼━━━━━━━━━━━━━━━━╾╯"}
 ${isGroup?`╿👥 *Group Role:* ${groupRole}
 ╰╼━━━━━━━━━━━━━━━━╾╯
 > ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴇᴠ xᴛʀᴇᴍᴇ` : ''}
