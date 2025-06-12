@@ -83,7 +83,7 @@ async (conn, mek, m, { from, sender, isGroup, reply, quoted, participants }) => 
         let groupRole = "";
         if (isGroup) {
             const participant = participants.find(p => p.id === userJid);
-            groupRole = participant?.admin ? "👑 Admin" : "👥 Member";
+            groupRole = participant?.admin ? "👑ADMIN" : "👥MEMBER";
         }
 
         // 7. FORMAT OUTPUT
