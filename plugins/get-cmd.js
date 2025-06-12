@@ -43,7 +43,7 @@ ${truncatedCode}
 
         // Send image with truncated source code
         await conn.sendMessage(from, { 
-            image: { url: `https://files.catbox.moe/sy6isf.jpg` },  // Image URL
+            image: { url: `https://files.catbox.moe/41efn1.jpg` },  // Image URL
             caption: formattedCode,
             contextInfo: {
                 mentionedJid: [m.sender],
@@ -76,8 +76,3 @@ ${truncatedCode}
         reply(`❌ Error: ${e.message}`);
     }
 });
-
-```
-╰──────────⊷  
-⚡ Full file sent below 📂  
-> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʜᴀɪᴋᴏ ᴍᴅx* 💜
