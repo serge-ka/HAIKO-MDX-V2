@@ -92,12 +92,10 @@ async (conn, mek, m, { from, sender, isGroup, reply, quoted, participants }) => 
             "No bio available";
 
         const userInfo = `
-╭╼⪨ *PP INFORMATION * ⪩╾╮
+╭╼⪨ *PP INFORMATION* ⪩╾╮
 ╽📛 *NAME:* ${userName}
 ┃🔢 *NUMBER:* ${userJid.replace(/@.+/, '')}
 ┃📌 *ACCOUNT TYPE:* ${user.isBusiness ? "💼 Business" : user.isEnterprise ? "🏢 Enterprise" : "👤 Personal"}
-┗━━━━━━━━━━━━━━━━━━━━━
-┏━━━━━━━━━━━━━━━━━━━━━
 ┃*📝 ABOUT:*
 ${formattedBio}
 ┃*⚙️ ACCOUNT INFO:*
@@ -105,7 +103,7 @@ ${formattedBio}
 ┃🛡️ VERIFIED: ${user.verifiedName ? "✅ Verified" : "❌ Not verified"}
 ${isGroup ? `
 ╿👥 *Group Role:* ${groupRole}
-╰╼━━━━━━━━━━━━━━━━━━╾╯
+╰╼━━━━━━━━━━━━━━━━━╾╯
 > ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴇᴠ xᴛʀᴇᴍᴇ` : ''}
 `.trim();
 
