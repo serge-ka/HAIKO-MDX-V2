@@ -1,9 +1,9 @@
-**_MULTI DEVICE WHATSAPP BOT_** 
+**_MULTI DEVICE WHATSAPP BOT XTRÊME_** 
 
 
 <p align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=80&pause=1000&color=459BF7FF&center=true&vCenter=true&width=1000&height=200&lines=HAIKO-MDX-V2;VERSION+2025;BY+PROF+X-TREME" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=80&pause=1000&color=459BF7FF&center=true&vCenter=true&width=1000&height=200&lines=HAIKO-MDX-V2;VERSION+2025;BY+PROF+XTRÊME" alt="Typing SVG" />
   </a>
 </p>
 
@@ -62,7 +62,7 @@
   
 --- 
 > **PAIRING LINK➻ 01**
-  <a href='https://haiko-mdx-v2-session.onrender.com' target="_blank">
+  <a href='https://meg-lodon-session.onrender.com/pair' target="_blank">
     <img src='https://img.shields.io/badge/PAIR_CODE_1-00FFFF?style=for-the-badge&logo=matrix&logoColor=white&labelColor=000000'/>
   </a></br>
   
