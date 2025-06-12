@@ -2,7 +2,7 @@ const { cmd } = require('../command');
 const { getBuffer, fetchJson } = require('../lib/functions');
 
 cmd({
-    pattern: "person",
+    pattern: "profile",
     react: "👤",
     alias: ["userinfo", "profile"],
     desc: "Get complete user profile information",
