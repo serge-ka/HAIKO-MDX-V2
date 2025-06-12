@@ -5,7 +5,7 @@ const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, runtime, sleep, 
 cmd({
     pattern: "tagall",
     react: "📣",
-    alias: ["gc_tagall"],
+    alias: ["gc_tagall","appel"],
     desc: "To Tag all Members",
     category: "group",
     use: '.tagall [message]',
