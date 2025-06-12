@@ -6,7 +6,7 @@ const tagEveryoneInGroup = async (message, sock) => {
     ? message.body.slice(prefix.length).trim().split(' ')[0].toLowerCase()
     : '';
 
-  if (cmd !== 'tagall2','appel2') return;
+  if (cmd !== 'tagall2') return;
 
   if (!message.isGroup) {
     return await sock.sendMessage(
