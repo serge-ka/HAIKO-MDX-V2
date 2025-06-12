@@ -96,13 +96,14 @@ async (conn, mek, m, { from, sender, isGroup, reply, quoted, participants }) => 
 ╽📛 *NAME:* ${userName}
 ┃🔢 *NUMBER:* ${userJid.replace(/@.+/, '')}
 ┃📌 *ACCOUNT TYPE:* ${user.isBusiness ? "💼 Business" : user.isEnterprise ? "🏢 Enterprise" : "👤 Personal"}
-┃*📝 ABOUT:*
+┃📝 *ABOUT:*
 ${formattedBio}
-┃*⚙️ ACCOUNT INFO:*
-┃✅ REGISTERED: ${user.isUser ? "Yes" : "No"}
-┃🛡️ VERIFIED: ${user.verifiedName ? "✅ VERIFIED" : "❌ Not verified ╰╼━━━━━━━━━━━━━━━━╾╯"}
-${isGroup?`╿👥 *Group Role:* ${groupRole}
-╰╼━━━━━━━━━━━━━━━━╾╯
+┃⚙️ *ACCOUNT INFO:*
+┃✅ *REGISTERED:* ${user.isUser ? "Yes" : "No"}
+┃🛡️ *VERIFIED:* ${user.verifiedName ? "✅ VERIFIED" : "❌ Not verified ╰╼━━━━━━━━━━━━━━━━━╾╯"}
+${isGroup?`╭━━━━━━━━━━━━━━━━━━╾╮
+┃👥 *GROUP ROLE:* ${groupRole}
+╰╼━━━━━━━━━━━━━━━━━╾╯
 > ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴇᴠ xᴛʀᴇᴍᴇ` : ''}
 `.trim();
 
