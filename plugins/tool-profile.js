@@ -92,19 +92,21 @@ async (conn, mek, m, { from, sender, isGroup, reply, quoted, participants }) => 
             "No bio available";
 
         const userInfo = `
-*GC MEMBER INFORMATION 🧊*
-
-📛 *Name:* ${userName}
-🔢 *Number:* ${userJid.replace(/@.+/, '')}
-📌 *Account Type:* ${user.isBusiness ? "💼 Business" : user.isEnterprise ? "🏢 Enterprise" : "👤 Personal"}
-
-*📝 About:*
+╭╼⪨ *PP INFORMATION * ⪩╾╮
+╽📛 *NAME:* ${userName}
+┃🔢 *NUMBER:* ${userJid.replace(/@.+/, '')}
+┃📌 *ACCOUNT TYPE:* ${user.isBusiness ? "💼 Business" : user.isEnterprise ? "🏢 Enterprise" : "👤 Personal"}
+┗━━━━━━━━━━━━━━━━━━━━━
+┏━━━━━━━━━━━━━━━━━━━━━
+┃*📝 ABOUT:*
 ${formattedBio}
-
-*⚙️ Account Info:*
-✅ Registered: ${user.isUser ? "Yes" : "No"}
-🛡️ Verified: ${user.verifiedName ? "✅ Verified" : "❌ Not verified"}
-${isGroup ? `👥 *Group Role:* ${groupRole}` : ''}
+┃*⚙️ ACCOUNT INFO:*
+┃✅ REGISTERED: ${user.isUser ? "Yes" : "No"}
+┃🛡️ VERIFIED: ${user.verifiedName ? "✅ Verified" : "❌ Not verified"}
+${isGroup ? `
+╿👥 *Group Role:* ${groupRole}
+╰╼━━━━━━━━━━━━━━━━━━╾╯
+> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴇᴠ xᴛʀᴇᴍᴇ` : ''}
 `.trim();
 
         // 8. SEND RESULT
@@ -119,4 +121,5 @@ ${isGroup ? `👥 *Group Role:* ${groupRole}` : ''}
         reply(`❌ Error: ${e.message || "Failed to fetch profile"}`);
     }
 });
-                      
+
+            
