@@ -44,7 +44,8 @@ async (conn, mek, m, { from, participants, reply, isGroup, senderNumber, groupAd
 *│🛡️𝙰𝙳𝙼𝙸𝙽𝚂: not defined*
 *╰╼━━━━━━━━━━━━━━━━━━╾╯*
 
-*╭╼┉┉┉┉┉〔𝚃𝙰𝙶𝙰𝙻𝙻𝚂〕┉┉┉┉┉╮*`;
+*╭╼┉┉┉┉┉〔𝚃𝙰𝙶𝙰𝙻𝙻𝚂〕┉┉┉┉┉╮*
+`;
 
         for (let mem of participants) {
             if (!mem.id) continue; // Prevent undefined errors
