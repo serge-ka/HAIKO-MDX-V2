@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 cmd({
-    pattern: "get",
+    pattern: "cmd",
     alias: ["source", "js"],
     desc: "Fetch the full source code of a command",
     category: "owner",
@@ -50,7 +50,7 @@ ${truncatedCode}
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363372853772240@newsletter',
+                    newsletterJid: '120363398101781980@newsletter',
                     newsletterName: '🅓🅔🅥 🅧🅣🅡🅔🅜🅔',
                     serverMessageId: 143
                 }
