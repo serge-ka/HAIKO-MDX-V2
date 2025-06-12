@@ -101,8 +101,7 @@ ${formattedBio}
 ┃*⚙️ ACCOUNT INFO:*
 ┃✅ REGISTERED: ${user.isUser ? "Yes" : "No"}
 ┃🛡️ VERIFIED: ${user.verifiedName ? "✅ Verified" : "❌ Not verified"}
-${isGroup ? `
-╿👥 *Group Role:* ${groupRole}
+${isGroup ? `╿👥 *Group Role:* ${groupRole}
 ╰╼━━━━━━━━━━━━━━━━━╾╯
 > ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴇᴠ xᴛʀᴇᴍᴇ` : ''}
 `.trim();
