@@ -21,6 +21,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ├❁┃•  Prefix : *➥${config.PREFIX}*
 ├❁┃•  Platform : *GITHUB*
 ├❁┃•  Version : *2.0.0*
+├❁┃•  command : *${totalCommands}*
 ├❁┃•  Runtime : *${runtime(process.uptime())}*
 ├❁╰───────────────┈⊷
 ╰━━━━━━━━━━━━━━━━━┈⊷
