@@ -2,7 +2,7 @@ const { cmd } = require('../command');
 
 cmd({
     pattern: "demote",
-    alias: ["d", "dismiss", "removeadmin"],
+    alias: ["xtreme-called", "dismiss", "removeadmin"],
     desc: "Demotes a group admin to a normal member",
     category: "admin",
     react: "⬇️",
@@ -36,7 +36,7 @@ async(conn, mek, m, {
 
     try {
         await conn.groupParticipantsUpdate(from, [jid], "demote");
-        reply(`✅ Successfully demoted @${number} to a normal member.`, { mentions: [jid] });
+        reply(`*✅ SUCCESSFULLY DEMOTED @${number} TO A NORMAL MENMBER.*`, { mentions: [jid] });
     } catch (error) {
         console.error("Demote command error:", error);
         reply("❌ Failed to demote the member.");
