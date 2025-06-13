@@ -42,7 +42,7 @@ async (conn, mek, m, { from, reply }) => {
   ├─ 👤 ${repoData.owner.login}
   ├─ ✨ ${repoData.stargazers_count} Stars
   ├─ ⑂ ${repoData.forks_count} Forks
-  │
+  │URL: ${repoData.html_url}
   •——[ ${config.BOT_NAME} ]——•
   > ${config.DESCRIPTION}`;
 
@@ -165,7 +165,7 @@ ${repoData.description || 'No description'}
 DESCRIPTION:
 ${repoData.description || 'NO DESCRIPTION PROVIDED'}
 
-> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʜᴀɪᴋᴏ ᴍᴅx*`;
+> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴇᴠ xᴛʀᴇᴍᴇ*`;
 
         const styles = [style1, style2, style3, style4, style5, style6, style7, style8, style9, style10];
         const selectedStyle = styles[Math.floor(Math.random() * styles.length)];
@@ -188,7 +188,7 @@ ${repoData.description || 'NO DESCRIPTION PROVIDED'}
 
         // Send audio
         await conn.sendMessage(from, {
-            audio: { url: 'https://files.catbox.moe/gidmqw.mp3' },
+            audio: { url: 'https://files.catbox.moe/uzvvj1.mp3' },
             mimetype: 'audio/mp4',
             ptt: true,
             contextInfo: { 
