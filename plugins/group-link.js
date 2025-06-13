@@ -7,7 +7,7 @@ const { writeFileSync } = require('fs');
 const path = require('path');
 
 cmd({
-    pattern: "invite",
+    pattern: "link",
     alias: ["glink", "grouplink"],
     desc: "Get group invite link.",
     category: "group", // Already group
