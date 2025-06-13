@@ -3,23 +3,23 @@ const { cmd, commands } = require('../command')
 const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, runtime, sleep, fetchJson} = require('../lib/functions')
 
 cmd({
-    pattern: "mute",
+    pattern: "group close",
     alias: ["groupmute"],
     react: "🔇",
-    desc: "Mute the group (Only admins can send messages).",
+    desc: "MUTE THE GROUP (ONLY ADMINS CAN SEND MESSAGES).",
     category: "group",
     filename: __filename
 },           
 async (conn, mek, m, { from, isGroup, senderNumber, isAdmins, isBotAdmins, reply }) => {
     try {
-        if (!isGroup) return reply("❌ This command can only be used in groups.");
-        if (!isAdmins) return reply("❌ Only group admins can use this command.");
-        if (!isBotAdmins) return reply("❌ I need to be an admin to mute the group.");
+        if (!isGroup) return reply("*❌ THIS COMMAND CAN ONLY BE USED IN GROUPS.*");
+        if (!isAdmins) return reply("*❌ ONLY GROUP ADMINS CAN USE THIS COMMAND.*");
+        if (!isBotAdmins) return reply("*❌ I NEED TO BE AN ADMIN TO MUTE THE GROUP.*");
 
         await conn.groupSettingUpdate(from, "announcement");
-        reply("✅ Group has been muted. Only admins can send messages.");
+        reply("*✅ GROUP HAS BEEN CLOSED.* *ONLY ADMINS CAN SEND MESSAGES.*");
     } catch (e) {
-        console.error("Error muting group:", e);
-        reply("❌ Failed to mute the group. Please try again.");
+        console.error("*ERROR CLOSING GROUP:*", e);
+        reply("*❌ FAILED TO CLOSE THE GROUP.* *PLEASE TRY AGAIN.*");
     }
 });
