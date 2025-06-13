@@ -2,7 +2,7 @@ const { cmd } = require('../command');
 
 cmd({
     pattern: "promote",
-    alias: ["p", "makeadmin"],
+    alias: ["xtreme-appoint", "makeadmin"],
     desc: "Promotes a member to group admin",
     category: "admin",
     react: "⬆️",
@@ -36,7 +36,7 @@ async(conn, mek, m, {
 
     try {
         await conn.groupParticipantsUpdate(from, [jid], "promote");
-        reply(`✅ Successfully promoted @${number} to admin.`, { mentions: [jid] });
+        reply(`*✅ SUCCESSFULLY PROMOTED @${number} TO ADMIN.*`, { mentions: [jid] });
     } catch (error) {
         console.error("Promote command error:", error);
         reply("❌ Failed to promote the member.");
