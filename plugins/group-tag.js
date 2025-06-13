@@ -3,7 +3,7 @@ const { cmd } = require('../command');
 // Fixed & Created By JawadTechX
 cmd({
   pattern: "hidetag",
-  alias: ["tag", "h"],  
+  alias: ["tag", "annonce"],  
   react: "🔊",
   desc: "To Tag all Members for Any Message/Media",
   category: "group",
@@ -93,7 +93,7 @@ async (conn, mek, m, {
 
       // Fallback for any other message type
       return await conn.sendMessage(from, {
-        text: m.quoted.text || "📨 Message",
+        text: m.quoted.text || "*📨 XTREME TAG*",
         ...mentionAll
       }, { quoted: mek });
     }
