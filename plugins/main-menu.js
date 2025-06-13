@@ -344,7 +344,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ├❒┃➢  ytv
 ├❒╰───────────────┈⊷
 ╰━━━━━━━━━━━━━━━━━┈⊷
-> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʜᴀɪᴋᴏ ᴍᴅx*`;
+> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴇᴠ xᴛʀᴇᴍᴇ*`;
 
         await conn.sendMessage(
             from,
@@ -367,7 +367,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 
         // Send audio
         await conn.sendMessage(from, {
-            audio: { url: 'https://files.catbox.moe/gidmqw.mp3' },
+            audio: { url: 'https://files.catbox.moe/uzvvj1.mp3' },
             mimetype: 'audio/mp4',
             ptt: true
         }, { quoted: mek });
