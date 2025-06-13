@@ -30,14 +30,15 @@ const groupAdmins = participants.filter(p => p.admin);
 const listAdmin = groupAdmins.map((v, i) => `${i + 1}. @${v.id.split('@')[0]}`).join('\n');
 const owner = metadata.owner
 
-const gdata = `*「 Group Information 」*\n
-\t*${metadata.subject}*
-
-*Group Jid* - ${metadata.id}
-*Participant Count* - ${metadata.size}
-*Group Creator* - ${owner.split('@')[0]}
-*Group Description* - ${metadata.desc?.toString() || 'undefined'}\n
-*Group Admins* - \n${listAdmin}\n`
+const gdata = `*╭╼━━⪨ GROUP INFO ⪩━━╾╮*
+*┃📋G-NAME* - ${metadata.subject}
+*┃🆔GROUP JID* - ${metadata.id}
+*┃👥PARTICIPANT COUNT* - ${metadata.size}
+*┃👑GROUP CREATOR* - ${owner.split('@')[0]}
+*┃📝GROUP DESCRIPTION* - ${metadata.desc?.toString() || 'undefined'}\n
+*┃🛡️GROUP ADMINS* - \n${listAdmin}\n
+*╰╼━━━━━━━━━━━━━━━╾╯*
+> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴇᴠ xᴛʀᴇᴍᴇ*`
 
 await conn.sendMessage(from,{image:{url: ppUrl },caption: gdata },{quoted:mek })
 } catch (e) {
