@@ -6,7 +6,7 @@ cmd({
     pattern: "group close",
     alias: ["groupmute"],
     react: "🔇",
-    desc: "MUTE THE GROUP (ONLY ADMINS CAN SEND MESSAGES).",
+    desc: "CLOSE THE GROUP (ONLY ADMINS CAN SEND MESSAGES).",
     category: "group",
     filename: __filename
 },           
