@@ -5,7 +5,7 @@ cmd({
     alias: ["kick", "k"],
     desc: "Removes a member from the group",
     category: "admin",
-    react: "❌",
+    react: "😡",
     filename: __filename
 },
 async (conn, mek, m, {
@@ -36,7 +36,7 @@ async (conn, mek, m, {
 
     try {
         await conn.groupParticipantsUpdate(from, [jid], "remove");
-        reply(`✅ Successfully removed @${number}`, { mentions: [jid] });
+        reply(`*✅ SUCCESSFULLY REMOVED @${number}*`, { mentions: [jid] });
     } catch (error) {
         console.error("Remove command error:", error);
         reply("❌ Failed to remove the member.");
