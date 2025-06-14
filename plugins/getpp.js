@@ -15,28 +15,28 @@ cmd({
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-        let privacyMenu = `╭━━〔 *Privacy Settings* 〕━━┈⊷
+        let privacyMenu = `╭━━〔 *ᴘʀɪᴠᴀᴄʏ sᴇᴛᴛɪɴɢs* 〕━━┈⊷
 ┃◈╭─────────────·๏
-┃◈┃• blocklist - View blocked users
-┃◈┃• getbio - Get user's bio
-┃◈┃• setppall - Set profile pic privacy
-┃◈┃• setonline - Set online privacy
-┃◈┃• setpp - Change bot's profile pic
-┃◈┃• setmyname - Change bot's name
-┃◈┃• updatebio - Change bot's bio
-┃◈┃• groupsprivacy - Set group add privacy
-┃◈┃• getprivacy - View current privacy settings
-┃◈┃• getpp - Get user's profile picture
+┃◈┃• ʙʟᴏᴄᴋʟɪsᴛ
+┃◈┃• ɢᴇᴛʙɪᴏ
+┃◈┃• sᴇᴛᴘᴘᴀʟʟ
+┃◈┃• sᴇᴛᴏɴʟɪɴᴇ 
+┃◈┃• sᴇᴛᴘᴘ
+┃◈┃• sᴇᴛᴍʏɴᴀᴍᴇ
+┃◈┃• ᴜᴘᴅᴀᴛᴇʙɪᴏ
+┃◈┃• ɢʀᴏᴜᴘsᴘʀɪᴠᴀᴄʏ
+┃◈┃• ɢᴇᴛᴘʀɪᴠᴀᴄʏ
+┃◈┃• ɢᴇᴛᴘᴘ
 ┃◈┃
-┃◈┃*Options for privacy commands:*
-┃◈┃• all - Everyone
-┃◈┃• contacts - My contacts only
-┃◈┃• contact_blacklist - Contacts except blocked
-┃◈┃• none - Nobody
-┃◈┃• match_last_seen - Match last seen
+┃◈┃*ᴏᴘᴛɪᴏɴs ғᴏʀ ᴘʀɪᴠᴀᴄʏ ᴄᴏᴍᴍᴀɴᴅs:*
+┃◈┃• ᴀʟʟ - ᴇᴠᴇʀʏᴏɴᴇ
+┃◈┃• ᴄᴏɴᴛᴀᴄᴛs 
+┃◈┃• contact_ʙʟᴀᴄᴋʟɪsᴛ 
+┃◈┃• ɴᴏɴᴇ - Nobody
+┃◈┃• match_last_sᴇᴇɴ 
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
-*Note:* Most commands are owner-only`;
+*ɴᴏᴛᴇ:* *ᴍᴏsᴛ ᴄᴏᴍᴍᴀɴᴅs ᴀʀᴇ ᴏᴡɴᴇʀ-ᴏɴʟʏ`;
 
         await conn.sendMessage(
             from,
