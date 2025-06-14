@@ -28,7 +28,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈┃• ɢᴇᴛᴘʀɪᴠᴀᴄʏ
 ┃◈┃• ɢᴇᴛᴘᴘ
 ┃◈┃
-┃◈┃*ᴏᴘᴛɪᴏɴs ғᴏʀ ᴘʀɪᴠᴀᴄʏ ᴄᴏᴍᴍᴀɴᴅs:*
+┃◈┃ *ᴏᴘᴛɪᴏɴs ғᴏʀ ᴘʀɪᴠᴀᴄʏ ᴄᴏᴍᴍᴀɴᴅs:*
 ┃◈┃• ᴀʟʟ - ᴇᴠᴇʀʏᴏɴᴇ
 ┃◈┃• ᴄᴏɴᴛᴀᴄᴛs 
 ┃◈┃• contact_ʙʟᴀᴄᴋʟɪsᴛ 
@@ -36,7 +36,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈┃• match_last_sᴇᴇɴ 
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
-*ɴᴏᴛᴇ:* *ᴍᴏsᴛ ᴄᴏᴍᴍᴀɴᴅs ᴀʀᴇ ᴏᴡɴᴇʀ-ᴏɴʟʏ`;
+*ɴᴏᴛᴇ:* *ᴍᴏsᴛ ᴄᴏᴍᴍᴀɴᴅs ᴀʀᴇ ᴏᴡɴᴇʀ-ᴏɴʟʏ*`;
 
         await conn.sendMessage(
             from,
