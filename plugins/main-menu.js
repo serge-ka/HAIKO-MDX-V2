@@ -22,7 +22,7 @@ cmd({
   react: "👑",
   filename: __filename
 },
-async (dyby, mek, m, { from, reply }) => {
+async (haiko, mek, m, { from, reply }) => {
   try {
     const totalCommands = commands.length;
     const date = moment().tz("America/Mexico").format("dddd, DD MMMM YYYY");
@@ -35,7 +35,7 @@ async (dyby, mek, m, { from, reply }) => {
       return `${h}h ${m}m ${s}s`;
     };
 
-    let dybymenu = `
+    let haikomenu = `
 ╭══⪨ 𝐇𝐀𝐈𝐊𝐎-𝐌𝐃𝐗-𝐕𝟐 ⪩══╮
 ┃♔♚ 𝗨𝗦𝗘𝗥 : @${m.sender.split("@")[0]}
 ┃♔♚ 𝗧𝗜𝗠𝗘 : ${uptime()}
@@ -54,13 +54,13 @@ async (dyby, mek, m, { from, reply }) => {
 
     const keys = Object.keys(category).sort();
     for (let k of keys) {
-      dybymenu += `\n\n╭╼━⪨ ${k.toUpperCase()} MENU ⪩━╾╮`;
+      haikomenu += `\n\n╭╼━⪨ ${k.toUpperCase()} MENU ⪩━╾╮`;
       const cmds = category[k].filter(c => c.pattern).sort((a, b) => a.pattern.localeCompare(b.pattern));
       cmds.forEach((cmd) => {
         const usage = cmd.pattern.split('|')[0];
-        Haikomenu += `\n│➻ ${config.PREFIX}${toSmallCaps(usage)}`;
+        haiko += `\n│➻ ${config.PREFIX}${toSmallCaps(usage)}`;
       });
-  Haikomenu += `\n╰╼━━━━━━━━━━━━╾╯`;
+  haikomenu += `\n╰╼━━━━━━━━━━━━╾╯`;
     }
 
     dybymenu += `\n`;
