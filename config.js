@@ -23,7 +23,7 @@ ANTI_LINK: process.env.ANTI_LINK || "true",
 // make anti link true,false for groups 
 MENTION_REPLY: process.env.MENTION_REPLY || "false",
 // make true if want auto voice reply if someone menetion you 
-MENU_IMAGE_URL: process.env.MENU_IMAGE_URL || "https://files.catbox.moe/3nkxx1.jpg",
+MENU_IMAGE_URL: process.env.MENU_IMAGE_URL || "https://files.catbox.moe/xp1wdz.jpg",
 // add custom menu and mention reply image url
 PREFIX: process.env.PREFIX || ".",
 // add your prifix for bot   
@@ -41,11 +41,11 @@ OWNER_NUMBER: process.env.OWNER_NUMBER || "529633982655",
 // add your bot owner number
 OWNER_NAME: process.env.OWNER_NAME || "🌟𝐗-𝐓𝐑𝐄𝐌𝐄💕",
 // add bot owner name
-DESCRIPTION: process.env.DESCRIPTION || "*© ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʜᴀɪᴋᴏ ᴍᴅx*",
+DESCRIPTION: process.env.DESCRIPTION || "*© ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴇᴠ xᴛʀᴇᴍᴇ*",
 // add bot owner name    
-ALIVE_IMG: process.env.ALIVE_IMG || "https://files.catbox.moe/vjfkj7.jpg",
+ALIVE_IMG: process.env.ALIVE_IMG || "https://files.catbox.moe/xp1wdz.jpg",
 // add img for alive msg
-LIVE_MSG: process.env.LIVE_MSG || "> *ZINDA HUM YAR HAIKO-MDX-V2*👻",
+LIVE_MSG: process.env.LIVE_MSG || "> *ZINDA HUM YAR HAIKO-MDX-V2*❄️",
 // add alive msg here 
 READ_MESSAGE: process.env.READ_MESSAGE || "false",
 // Turn true or false for automatic read msgs
@@ -53,7 +53,7 @@ AUTO_REACT: process.env.AUTO_REACT || "false",
 // make this true or false for auto react on all msgs
 ANTI_BAD: process.env.ANTI_BAD || "false",
 // false or true for anti bad words  
-MODE: process.env.MODE || "private",
+MODE: process.env.MODE || "public",
 // make bot public-private-inbox-group 
 ANTI_LINK_KICK: process.env.ANTI_LINK_KICK || "false",
 // make anti link true,false for groups 
