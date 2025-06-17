@@ -8,45 +8,45 @@ cmd({
     pattern: "menu3",
     desc: "menu the bot",
     category: "menu2",
-    react: "🛸",
+    react: "📜",
     filename: __filename
 },
 async (conn, mek, m, { from, sender, pushname, reply }) => {
     try {
-        const dec = `╭━━━〔 *𝐇𝐀𝐈𝐊𝐎-𝐌𝐃𝐗-𝐕𝟐* 〕━━━╮
-┃ ✨ *Owner:* ${config.OWNER_NAME}
-┃ ⚙️ *Mode:* ${config.MODE}
-┃ 📡 *Platform:* Heroku
-┃ 🧠 *Type:* NodeJs (Multi Device)
-┃ ⌨️ *Prefix:* ${config.PREFIX}
-┃ 🧾 *Version:* 2.0.0 Beta
-╰━━━━━━━━━━━━━━━━━━━━━━━━╯
+        const dec = `╭━━⧼ 𝐇𝐀𝐈𝐊𝐎-𝐌𝐃𝐗-𝐕𝟐 ⧽━━╮
+┃ ✨ *ᴏᴡɴᴇʀ:* ${config.OWNER_NAME}
+┃ ⚙️ *ᴍᴏᴅᴇ:* ${config.MODE}
+┃ 📡 *ᴘʟᴀᴛғᴏʀᴍ:* GitHub
+┃ 🧠 *ᴛʏᴘᴇ:* NodeJs (Multi Device)
+┃ ⌨️ *ᴘʀᴇғɪx:* ${config.PREFIX}
+┃ 🧾 *ᴠᴇʀsɪᴏɴ:* 2.0.0 ʙᴇᴛᴀ
+╰━━━━━━━━━━━━━━━━━━━━━━╯
 
-╭━━〔 🧩 *Command Categories* 〕━━╮
-┃ Quranmenu
-┃ Prayertime
-┃ Aimenu
-┃ Anmiemenu
-┃ Reactions
-┃ Convertmenu
-┃ Funmenu
-┃ Dlmenu
-┃ Listcmd
-┃ Mainmenu
-┃ Groupmenu
-┃ Allmenu
-┃ Ownermenu
-┃ Othermenu
-┃ Logo
-┃ Repo
-╰━━━━━━━━━━━━━━━━━━━━━━━━━━━╯
-> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʜᴀɪᴋᴏ ᴍᴅx*
+╭━⧼🧩 *ᴄᴏᴍᴍᴀɴᴅ ᴄᴀᴛᴇɢᴏʀɪᴇs* ⧽━╮
+┃⦉ ǫᴜʀᴀɴᴍᴇɴᴜ
+┃⦉ ᴘʀᴀʏᴇʀᴛɪᴍᴇ
+┃⦉ ᴀɪᴍᴇɴᴜ
+┃⦉ ᴀɴᴍɪᴇᴍᴇɴᴜ
+┃⦉ ʀᴇᴀᴄᴛɪᴏɴs
+┃⦉ ᴄᴏɴᴠᴇʀᴛᴍᴇɴᴜ
+┃⦉ ғᴜɴᴍᴇɴᴜ
+┃⦉ ᴅʟᴍᴇɴᴜ
+┃⦉ ʟɪsᴛᴄᴍᴅ
+┃⦉ ᴍᴀɪɴᴍᴇɴᴜ
+┃⦉ ɢʀᴏᴜᴘᴍᴇɴᴜ
+┃⦉ ᴀʟʟᴍᴇɴᴜ
+┃⦉ ᴏᴡɴᴇʀᴍᴇɴᴜ
+┃⦉ ᴏᴛʜᴇʀᴍᴇɴᴜ
+┃⦉ ʟᴏɢᴏ
+┃⦉ ʀᴇᴘᴏ
+╰━━━━━━━━━━━━━━━━━━━━━━━━━╯
+> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴇᴠ xᴛʀᴇᴍᴇ*
 `;
 
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/rvopa2.jpg` },
+                image: { url: `https://files.catbox.moe/2vosmn.jpg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
@@ -54,7 +54,7 @@ async (conn, mek, m, { from, sender, pushname, reply }) => {
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
                         newsletterJid: '120363398101781980@newsletter',
-                        newsletterName: '𝐇𝐀𝐈𝐊𝐎-𝐌𝐃𝐗-𝐕𝟐🪀',
+                        newsletterName: '𝐏𝐑𝐎𝐅-𝐗𝐓𝐑𝐄𝐌𝐄',
                         serverMessageId: 143
                     }
                 }
@@ -73,7 +73,7 @@ async (conn, mek, m, { from, sender, pushname, reply }) => {
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: '120363398101781980@newsletter',
-                    newsletterName:'𝐇𝐀𝐈𝐊𝐎-𝐌𝐃𝐗-𝐕𝟐🪀',
+                    newsletterName:'𝐏𝐑𝐎𝐅-𝐗𝐓𝐑𝐄𝐌𝐄',
                     serverMessageId: 143
                 }
             }
