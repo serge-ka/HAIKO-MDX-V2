@@ -35,7 +35,7 @@ async (dyby, mek, m, { from, reply }) => {
       return `${h}h ${m}m ${s}s`;
     };
 
-    let haikomenu = `
+    let dybymenu = `
 ╭══⪨ 𝐇𝐀𝐈𝐊𝐎-𝐌𝐃𝐗-𝐕𝟐 ⪩══╮
 ┃♔♚ 𝗨𝗦𝗘𝗥 : @${m.sender.split("@")[0]}
 ┃♔♚ 𝗧𝗜𝗠𝗘 : ${uptime()}
