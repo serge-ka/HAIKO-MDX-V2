@@ -471,7 +471,7 @@ cmd({
                             }
 
                             await conn.sendMessage(senderID, {
-                                react: { text: '✅', key: receivedMsg.key }
+                                react: { text: '❄️', key: receivedMsg.key }
                             });
 
                         } catch (e) {
