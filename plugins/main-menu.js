@@ -35,8 +35,7 @@ async (haiko, mek, m, { from, reply }) => {
       return `${h}h ${m}m ${s}s`;
     };
 
-    let haikomenu = `
-╭══⪨ 𝐇𝐀𝐈𝐊𝐎-𝐌𝐃𝐗-𝐕𝟐 ⪩══╮
+    let haikomenu = `╭══⪨ 𝐇𝐀𝐈𝐊𝐎-𝐌𝐃𝐗-𝐕𝟐 ⪩══╮
 ┃♔♚ 𝗨𝗦𝗘𝗥 : @${m.sender.split("@")[0]}
 ┃♔♚ 𝗧𝗜𝗠𝗘 : ${uptime()}
 ┃♔♚ 𝗠𝗢𝗗𝗘 : *${config.MODE}*
@@ -44,7 +43,7 @@ async (haiko, mek, m, { from, reply }) => {
 ┃♔♚ 𝗣𝗟𝗨𝗚𝗜𝗡 :  ${totalCommands}
 ┃♔♚ 𝗗𝗘𝗩 : 𝗣𝗥𝗢𝗙-𝗫𝗧𝗥𝗘𝗠𝗘
 ┃♔♚ 𝗩𝗘𝗥𝗦𝗜𝗢𝗡 : 𝟮.𝟬.𝟬
-╰═══════════════════╯
+╰══════════════════╯
 
 *WELCOME TO HAIKO MDX V2*
 -------------------------------------------------
