@@ -63,11 +63,11 @@ async (haiko, mek, m, { from, reply }) => {
   haikomenu += `\n╰╼━━━━━━━━━━━━╾╯`;
     }
 
-    dybymenu += `\n`;
+    haikomenu += `\n`;
     
-await dyby.sendMessage(from, {
+await haiko.sendMessage(from, {
       image: { url: config.MENU_IMAGE_URL },
-      caption: dybymenu,
+      caption: haikomenu,
       contextInfo: {
         mentionedJid: [m.sender],
         forwardingScore: 999,
