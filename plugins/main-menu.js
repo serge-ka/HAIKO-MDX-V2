@@ -22,7 +22,7 @@ cmd({
   react: "👑",
   filename: __filename
 },
-async (haiko, mek, m, { from, reply }) => {
+async (dyby, mek, m, { from, reply }) => {
   try {
     const totalCommands = commands.length;
     const date = moment().tz("America/Mexico").format("dddd, DD MMMM YYYY");
@@ -54,20 +54,20 @@ async (haiko, mek, m, { from, reply }) => {
 
     const keys = Object.keys(category).sort();
     for (let k of keys) {
-      haikomenu += `\n\n╭╼━⪨ ${k.toUpperCase()} MENU ⪩━╾╮`;
+      dybymenu += `\n\n╭╼━⪨ ${k.toUpperCase()} MENU ⪩━╾╮`;
       const cmds = category[k].filter(c => c.pattern).sort((a, b) => a.pattern.localeCompare(b.pattern));
       cmds.forEach((cmd) => {
         const usage = cmd.pattern.split('|')[0];
-        haiko += `\n│➻ ${config.PREFIX}${toSmallCaps(usage)}`;
+        dyby += `\n│➻ ${config.PREFIX}${toSmallCaps(usage)}`;
       });
-  haikomenu += `\n╰╼━━━━━━━━━━━━╾╯`;
+  dybymenu += `\n╰╼━━━━━━━━━━━━╾╯`;
     }
 
-    haikomenu += `\n`;
+    dybymenu += `\n`;
     
-await haiko.sendMessage(from, {
+await dyby.sendMessage(from, {
       image: { url: config.MENU_IMAGE_URL },
-      caption: haikomenu,
+      caption: dybymenu,
       contextInfo: {
         mentionedJid: [m.sender],
         forwardingScore: 999,
