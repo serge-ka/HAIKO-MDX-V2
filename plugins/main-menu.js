@@ -365,7 +365,7 @@ async (haiko, mek, m, { from, reply }) => {
 > *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴇᴠ xᴛʀᴇᴍᴇ*`;
     
 await haiko.sendMessage(from, {
-      image: { url: config.MENU_IMAGE_URL },
+      image: { url:`https://files.catbox.moe/nn90ag.jpg`},
       caption: haikomenu,
       contextInfo: {
         mentionedJid: [m.sender],
@@ -373,7 +373,7 @@ await haiko.sendMessage(from, {
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
           newsletterJid: '120363398101781980@newsletter',
-          newsletterName: '𝑯𝑨𝑰𝑲𝑶-𝑴𝑫𝑿',
+          newsletterName: '𝐏𝐑𝐎𝐅-𝐗𝐓𝐑𝐄𝐌𝐄',
           serverMessageId: 143
         }
       }
