@@ -16,7 +16,7 @@ cmd({
 ├❁│ Owner : *${config.OWNER_NAME}*
 ├❁│ Baileys : *Multi Device*
 ├❁│ Type : *NodeJs*
-├❁│ Platform : *GITHUB*
+├❁│ Platform : *GitHub*
 ├❁│ Mode : *[${config.MODE}]*
 ├❁│ Prefix : *➥${config.PREFIX}*
 ├❁│ Version : *2.0.0 Bᴇᴛᴀ*
@@ -24,19 +24,19 @@ cmd({
 ╰━━━━━━━━━━━━━┈⊷
 ╭━⪨💮𝐌𝐄𝐍𝐔 𝐋𝐈𝐒𝐓⪩━┈⊷
 ├❒╭─────────────·๏
-├❒┃➢ ① *Download Menu*
-├❒┃➢ ② *Group Menu*
-├❒┃➢ ③ *Fun Menu*
-├❒┃➢ ④ *Owner Menu*
-├❒┃➢ ⑤ *AI Menu*
-├❒┃➢ ⑥ *Anime Menu*
-├❒┃➢ ⑦ *Convert Menu*
-├❒┃➢ ⑧ *Other Menu*
-├❒┃➢ ⑨ *Reactions Menu*
-├❒┃➢𝟏⓪ *Main Menu*
+├❒┃➢ ❶ *DOWNLOAD MENU*
+├❒┃➢ ❷ *GROUP MENU*
+├❒┃➢ ❸ *FUN MENU*
+├❒┃➢ ❹ *OWNER MENU*
+├❒┃➢ ❺ *AI MENU*
+├❒┃➢ ❻ *ANIME MENU*
+├❒┃➢ ❼ *CONVERT MENU*
+├❒┃➢ ❽ *OTHER MENU*
+├❒┃➢ ❾ *REACTIONS MENU*
+├❒┃➢ ➓ *MAIN MENU*
 ├❒╰──────────┈⊷
 ╰─────────────┈⊷
-> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʜᴀɪᴋᴏ ᴍᴅx*`;
+> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴇᴠ xᴛʀᴇᴍᴇ*`;
 
         const contextInfo = {
             mentionedJid: [m.sender],
@@ -44,7 +44,7 @@ cmd({
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
                 newsletterJid: '120363398101781980@newsletter',
-                newsletterName: "𝐇𝐀𝐈𝐊𝐎-𝐌𝐃𝐗-𝐕𝟐🪀",
+                newsletterName: "𝐏𝐑𝐎𝐅-𝐗𝐓𝐑𝐄𝐌𝐄",
                 serverMessageId: 143
             }
         };
@@ -55,7 +55,7 @@ cmd({
                 return await conn.sendMessage(
                     from,
                     {
-                        image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/s58v6g.jpg' },
+                        image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/xp1wdz.jpg' },
                         caption: menuCaption,
                         contextInfo: contextInfo
                     },
