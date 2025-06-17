@@ -21,7 +21,7 @@ cmd({
   try {
     if (!q) return reply("❎ Please provide text to convert.\n\n*Example:* .fancy Hello");
 
-    const apiUrl = `https://www.dark-yasiya-api.site/other/font?text=${encodeURIComponent(q)}`;
+    const apiUrl = `https://billowing-waterfall-dbab.bot1newnew.workers.dev/?word=${encodeURIComponent(q)}`;
     const res = await axios.get(apiUrl);
 
     if (!res.data.status || !Array.isArray(res.data.result)) {
