@@ -113,17 +113,17 @@ const port = process.env.PORT || 9090;
   console.log('Plugins installed successful ✅')
   console.log('Bot connected to whatsapp ✅')
   
-  let up = `╔═◈『𝐇𝐀𝐈𝐊𝐎-𝐌𝐃𝐗-𝐕𝟐』◈═╗
-║🪀 ┃ *PRÉFIX:* *➥${config.PREFIX}*
-║
-║♻️ ┃ *MODE:* *[${config.MODE}]*
-║
-║📦 ┃ *BOT REPO:* 
-║     https://github.com/PROFESSEURMDX/HAIKO-MDX-V2
-║
-╚══════════════════╝
+  let up = `╭╼━═⧼𝐁𝐎𝐓 𝐂𝐎𝐍𝐍𝐄𝐂𝐓⧽═━╾╮
+┃┋♚ *PRÉFIX:* *➥ {${config.PREFIX}}*
+┃┋
+┃┋♻ *MODE:* *[${config.MODE}]*
+┃┋
+┃┋♜ *BOT REPO:* 
+┃┋     https://github.com/PROFESSEURMDX/HAIKO-MDX-V2
+┃╰┅┅┅┅┅┅┅┅┅┅┅┅┅┅┈⊷
+╰╼════════════════╾╯
 > *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴇᴠ xᴛʀᴇᴍᴇ*`;
-    conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/h75sdo.jpg` }, caption: up })
+    conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/09v10p.jpg` }, caption: up })
   }
   })
   conn.ev.on('creds.update', saveCreds)
