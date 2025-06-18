@@ -1,50 +1,68 @@
-const { cmd, commands } = require('../command');
+const { cmd } = require('../command');
 const config = require('../config');
 const prefix = config.PREFIX;
 const fs = require('fs');
-const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, sleep, fetchJson } = require('../lib/functions2');
-const { writeFileSync } = require('fs');
+const { getBuffer } = require('../lib/functions2'); // Assure-toi que cette fonction récupère bien les buffers via axios
 const path = require('path');
 
 cmd({
-    pattern: "link",
-    alias: ["glink", "grouplink"],
+    pattern: "linkgroup",
+    alias: ["link", "invite", "grouplink", "satan-link"],
     desc: "Get group invite link.",
-    category: "group", // Already group
+    category: "group",
+    react: "🖇️",
     filename: __filename,
 }, async (conn, mek, m, { from, quoted, body, args, q, isGroup, sender, reply }) => {
     try {
-        // Ensure this is being used in a group
-        if (!isGroup) return reply("𝐓𝐡𝐢𝐬 𝐅𝐞𝐚𝐭𝐮𝐫𝐞 𝐈𝐬 𝐎𝐧𝐥𝐲 𝐅𝐨𝐫 𝐆𝐫𝐨𝐮𝐩❗");
+        if (!isGroup) return reply("❌ This feature is only available in groups.");
 
-        // Get the sender's number
         const senderNumber = sender.split('@')[0];
         const botNumber = conn.user.id.split(':')[0];
-        
-        // Check if the bot is an admin
-        const groupMetadata = isGroup ? await conn.groupMetadata(from) : '';
-        const groupAdmins = groupMetadata ? groupMetadata.participants.filter(member => member.admin) : [];
-        const isBotAdmins = isGroup ? groupAdmins.some(admin => admin.id === botNumber + '@s.whatsapp.net') : false;
-        
-        if (!isBotAdmins) return reply("𝐏𝐥𝐞𝐚𝐬𝐞 𝐏𝐫𝐨𝐯𝐢𝐝𝐞 𝐌𝐞 𝐀𝐝𝐦𝐢𝐧 𝐑𝐨𝐥𝐞 ❗");
 
-        // Check if the sender is an admin
-        const isAdmins = isGroup ? groupAdmins.some(admin => admin.id === sender) : false;
-        if (!isAdmins) return reply("𝐏𝐥𝐞𝐚𝐬𝐞 𝐏𝐫𝐨𝐯𝐢𝐝𝐞 𝐌𝐞 𝐀𝐝𝐦𝐢𝐧 𝐑𝐨𝐥𝐞 ❗");
+        const groupMetadata = await conn.groupMetadata(from);
+        const groupAdmins = groupMetadata.participants.filter(member => member.admin);
+        const isBotAdmins = groupAdmins.some(admin => admin.id === botNumber + '@s.whatsapp.net');
+        const isAdmins = groupAdmins.some(admin => admin.id === sender);
 
-        // Get the invite code and generate the link
+        if (!isBotAdmins) return reply("❌ I need to be an admin to fetch the group link.");
+        if (!isAdmins) return reply("❌ Only group admins or the bot owner can use this command.");
+
         const inviteCode = await conn.groupInviteCode(from);
-        if (!inviteCode) return reply("Failed to retrieve the invite code.");
+        if (!inviteCode) return reply("❌ Failed to retrieve the invite code.");
 
         const inviteLink = `https://chat.whatsapp.com/${inviteCode}`;
+        const ownerJid = groupMetadata.owner || '';
+        const groupOwner = ownerJid ? '@' + ownerJid.split('@')[0] : 'Unknown';
+        const groupName = groupMetadata.subject || 'Unknown';
+        const groupId = groupMetadata.id || from;
+        const memberCount = groupMetadata.participants.length;
 
-        // Reply with the invite link
-        return reply(`*Here is your group invite link:*\n${inviteLink}`);
-        
+        const infoText = `╭╼━━━⦉ *ɢʀᴏᴜᴘ ʟɪɴᴋ* ⦊━━━╾╮
+┃♣︎ɴᴀᴍᴇ: ${groupName}
+┃♣︎ᴏᴡɴᴇʀ: ${groupOwner}
+┃♣︎ɢʀᴏᴜᴘ ɪᴅ: ${groupId}
+┃♣︎ʟɪɴᴋ ɢʀᴏᴜᴘ: ${inviteLink}
+┃♣︎ᴍᴇɴᴍʙᴇʀs: #${memberCount}
+╰╼━━━━━━━━━━━━━━━━╾╯
+> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴇᴠ ᴘʀᴏғ-xᴛʀᴇᴍᴇ`;
+
+        let ppUrl;
+        try {
+            ppUrl = await conn.profilePictureUrl(from, 'image');
+        } catch {
+            ppUrl = 'https://telegra.ph/file/6880771a42bad09dd6087.jpg'; // Fallback photo
+        }
+
+        const buffer = await getBuffer(ppUrl);
+
+        return conn.sendMessage(from, {
+            image: buffer,
+            caption: infoText,
+            mentions: [ownerJid]
+        }, { quoted: m });
+
     } catch (error) {
-        console.error("Error in invite command:", error);
-        reply(`An error occurred: ${error.message || "Unknown error"}`);
+        console.error("❌ Error in linkgroup command:", error);
+        reply(`⚠️ An error occurred: ${error.message || "Unknown error"}`);
     }
 });
-
-          
