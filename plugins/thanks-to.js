@@ -6,7 +6,7 @@ cmd({
     alias: ["thanksto"],
     desc: "thanks to dev for helping",
     category: "main",
-    react: "💬",
+    react: "🅗🅐🅘🅚🅞",
     filename: __filename
 },
 async (conn, mek, m, { from }) => {
@@ -22,7 +22,7 @@ async (conn, mek, m, { from }) => {
 > *𝑃𝑂𝑊𝐸𝑅𝐸𝐷 𝐵𝑌 𝑋𝑇𝑅𝐸𝑀𝐸*`;
 
         await conn.sendMessage(from, {
-            image: { url: 'https://files.catbox.moe/1mp4yn.jpg' },
+            image: { url: 'https://files.catbox.moe/2vosmn.jpg' },
             caption: message,
             contextInfo: {
                 mentionedJid: [m.sender],
