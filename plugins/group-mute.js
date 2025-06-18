@@ -3,8 +3,8 @@ const { cmd, commands } = require('../command')
 const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, runtime, sleep, fetchJson} = require('../lib/functions')
 
 cmd({
-    pattern: "group close",
-    alias: ["groupmute"],
+    pattern: "close",
+    alias: ["group-close"],
     react: "🔇",
     desc: "CLOSE THE GROUP (ONLY ADMINS CAN SEND MESSAGES).",
     category: "group",
