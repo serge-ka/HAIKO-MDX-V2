@@ -6,7 +6,7 @@ cmd({
     alias: ["thanksto"],
     desc: "thanks to dev for helping",
     category: "main",
-    react: "🅗🅐🅘🅚🅞",
+    react: "🗯️",
     filename: __filename
 },
 async (conn, mek, m, { from }) => {
@@ -30,7 +30,7 @@ async (conn, mek, m, { from }) => {
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: '120363398101781980@newsletter', // remplace avec ton vrai newsletterJid si besoin
-                    newsletterName: '⪨𝐇𝐀𝐈𝐊𝐎-𝐌𝐃𝐗-𝐕𝟐⪩',
+                    newsletterName: '𝐏𝐑𝐎𝐅-𝐗𝐓𝐑𝐄𝐌𝐄',
                     serverMessageId: 143
                 }
             }
