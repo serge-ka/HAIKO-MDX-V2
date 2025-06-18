@@ -16,11 +16,12 @@ cmd(
         desc: 'Create a sticker with a custom pack name.',
         category: 'sticker',
         use: '<reply media or URL>',
+        react: "👩🏻‍💻",
         filename: __filename,
     },
     async (conn, mek, m, { quoted, args, q, reply, from }) => {
-        if (!mek.quoted) return reply(`*Reply to any sticker.*`);
-        if (!q) return reply(`*Please provide a pack name using .take <packname>*`);
+        if (!mek.quoted) return reply(`*REPLY TO ANY STICKER.*`);
+        if (!q) return reply(`*PLEASE PROVIDE A PACK NAME USING .TAKE*`);
 
         let mime = mek.quoted.mtype;
         let pack = q;
@@ -38,7 +39,7 @@ cmd(
             const buffer = await sticker.toBuffer();
             return conn.sendMessage(mek.chat, { sticker: buffer }, { quoted: mek });
         } else {
-            return reply("*Uhh, Please reply to an image.*");
+            return reply("*UHH, PLEASE REPLY TO AN IMAGE.*");
         }
     }
 );
@@ -52,12 +53,13 @@ cmd(
         desc: 'Create a sticker from an image, video, or URL.',
         category: 'sticker',
         use: '<reply media or URL>',
+        react: "👨🏻‍💻",
         filename: __filename,
     },
     async (conn, mek, m, { quoted, args, q, reply, from }) => {
-        if (!mek.quoted) return reply(`*Reply to any Image or Video, Sir.*`);
+        if (!mek.quoted) return reply(`*REPLY TO ANY IMAGE OR VIDEO, SIR.*`);
         let mime = mek.quoted.mtype;
-        let pack = Config.STICKER_NAME || "༺𒋲✟⃟͠♻️𝐃𝐄𝐕 𝐏𝐑𝚯𝐅𝐄𝐒𝐒𝐄𝐔𝐑👻❂𒋲";
+        let pack = Config.STICKER_NAME || "🌸𝐋𝐄 𝐌𝐄𝐂  𝐃𝐔𝐍𝐄 𝐒𝐄𝐔𝐋𝐄 𝐌𝐄𝐔𝐅☘️";
         
         if (mime === "imageMessage" || mime === "stickerMessage") {
             let media = await mek.quoted.download();
@@ -72,7 +74,7 @@ cmd(
             const buffer = await sticker.toBuffer();
             return conn.sendMessage(mek.chat, { sticker: buffer }, { quoted: mek });
         } else {
-            return reply("*Uhh, Please reply to an image.*");
+            return reply("*UHH, PLEASE REPLY TO AN IMAGE.*");
         }
     }
 );
