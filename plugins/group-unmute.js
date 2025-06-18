@@ -3,8 +3,8 @@ const { cmd, commands } = require('../command')
 const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, runtime, sleep, fetchJson} = require('../lib/functions')
 
 cmd({
-    pattern: "group ouvert",
-    alias: ["groupunmute"],
+    pattern: "open",
+    alias: ["group open"],
     react: "🔊",
     desc: "*OUVERT THE GROUP (EVERYONE CAN SEND MESSAGES).*",
     category: "group",
