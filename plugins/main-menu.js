@@ -19,7 +19,7 @@ cmd({
   use: '.menu',
   desc: "Show all bot commands",
   category: "menu",
-  react: "👑",
+  react: "📜",
   filename: __filename
 },
 async (haiko, mek, m, { from, reply }) => {
@@ -369,9 +369,9 @@ await haiko.sendMessage(from, {
       caption: haikomenu,
       contextInfo: {
         mentionedJid: [m.sender],
+        audio: { url: 'https://files.catbox.moe/6ifekx.mp3' },
         forwardingScore: 999,
         isForwarded: true,
-        audio: { url: 'https://files.catbox.moe/6ifekx.mp3' },
         forwardedNewsletterMessageInfo: {
           newsletterJid: '120363398101781980@newsletter',
           newsletterName: '𝐏𝐑𝐎𝐅-𝐗𝐓𝐑𝐄𝐌𝐄',
