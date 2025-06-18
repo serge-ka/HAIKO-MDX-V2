@@ -367,6 +367,7 @@ async (haiko, mek, m, { from, reply }) => {
 await haiko.sendMessage(from, {
       image: { url:`https://files.catbox.moe/nn90ag.jpg`},
       caption: haikomenu,
+      audio: { url: 'https://files.catbox.moe/6ifekx.mp3' },
       contextInfo: {
         mentionedJid: [m.sender],
         forwardingScore: 999,
