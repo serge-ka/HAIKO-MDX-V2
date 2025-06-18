@@ -2,8 +2,6 @@ const config = require('../config')
 const { cmd, commands } = require('../command')
 const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, runtime, sleep, fetchJson} = require('../lib/functions')
 
-const fallbackPP = 'https://i.ibb.co/KhYC4FY/1221bc0bdd2354b42b293317ff2adbcf-icon.png';
-
 cmd({
     pattern: "tagall",
     react: "📇",
